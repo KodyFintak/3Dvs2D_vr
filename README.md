@@ -12,6 +12,6 @@ Final project will contain:
 
 This project is being worked on by:
 Allen Ng
-Bennie Siu
+Benny Siu
 Kody Fintak
 Matthew Luck 
