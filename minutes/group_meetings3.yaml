@@ -1,0 +1,13 @@
+date: September 14, 2016
+meeting_type: ta
+attendance: [allenng, kodyfint, bennysiu, mjluck]
+absent: []
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Putting map together, final touch up on house, work on finishing title screen}
+  {ubit: kodyfint, progress: Worked on scripts to get multiple camera angles on specific hot keys}
+  {ubit: bennysiu, progress: Putting map together, final touch ups on castle, work on finishing title screen}
+  {ubit: mjluck, progress: Finish forest and putting the map together}
+  ]
+issues: [ubit: allenng, issue: House prefab does not seem to work on Windows or Mac. Created on Linux computer, shows up empty on other OS]
+Notes: Should be all ready for Sprint 1. Just need to set up GitHub and create the video. :)

@@ -1,0 +1,13 @@
+date: September 10, 2016
+meeting_type: group 
+attendance: [allenng, kodyfint, bennysiu, mjluck]
+absent: []
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Building the starting house for the map}
+  {ubit: kodyfint, progress: Building the Maze for the map}
+  {ubit: bennysiu, progress: Building the castle for the map}
+  {ubit: mjluck, progress: Buiding the forest for the map}
+  ]
+issues: [ubit: mjluck, issue: Forest part of map went haywire when trying to convert it into a prefab, have to redo]
+Notes: Still deciding how to place the components of the map, such as a big open world or a linear map
