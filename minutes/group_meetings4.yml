@@ -1,0 +1,13 @@
+date: September 16, 2016
+meeting_type: group 
+attendance: [allenng, kodyfint, bennysiu, mjluck]
+absent: []
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Try to fix house, set up GitHub and push to newly created repository}
+  {ubit: kodyfint, progress: Try to set up GitHub and push}
+  {ubit: bennysiu, progress: Try to set up GitHub and push}
+  {ubit: mjluck, progress: Try to set up GitHub and push}
+  ]
+issues: []
+Notes: After a few road blocks abou getting Unity Projects ready for GitHub, we were finally able to get one set up and all of our progress so far pushed
