@@ -17,6 +17,7 @@ public class Master_Control : MonoBehaviour {
 	bool doItOnce = true;
 	int health = 3;
 	Combat combatScript;
+	Player playerScript;
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +28,9 @@ public class Master_Control : MonoBehaviour {
 		agent = GetComponent<NavMeshAgent> ();
 		skeleControl = GetComponent<Skel_Control> ();
 		playerLocation = GameObject.Find ("FirstPersonCharacter").transform;
+		playerScript = GameObject.Find ("Player").GetComponent<Player>();
 		combatScript = GetComponent<Combat> ();
+
 	}
 
 //	public void setPath(List<Transform> path2Set){
@@ -41,30 +44,32 @@ public class Master_Control : MonoBehaviour {
 		if (health <= 0) {
 			skeleControl.setDeath (animate);
 			StartCoroutine (SleepForDeath ());
-		}
-		if (Vector3.Distance (playerLocation.position, this.transform.position) < 25 || animate.GetCurrentAnimatorStateInfo (0).IsName ("Attack")) {
-			if (firstTime) {
-				skeleControl.setRun (animate);
-				firstTime = false;
-			}
-			if (!agent.isActiveAndEnabled) {
-				agent.enabled = true;
-			}
-			follow.FollowThem (animate, agent, playerLocation, skeleControl,combatScript);
-			doneAttacking = true;
-		} else {
-			if (agent.isActiveAndEnabled) {
-				agent.Resume ();
-				firstTime = true;
-				if (doneAttacking) {
-					if (doItOnce) {
-						doItOnce = false;
-						skeleControl.setIdle (animate);
-						StartCoroutine (SleepForIdle ((animate.GetCurrentAnimatorStateInfo (0).length)));
-					}
-				} else {
-					if (!animate.GetBool ("isIdle")) {
-						pathFollowScript.Patrol (pathScript.actualPath, agent, animate, skeleControl);
+		} 
+		else {
+			if (Vector3.Distance (playerLocation.position, this.transform.position) < 25 || animate.GetCurrentAnimatorStateInfo (0).IsName ("Attack")) {
+				if (firstTime) {
+					skeleControl.setRun (animate);
+					firstTime = false;
+				}
+				if (!agent.isActiveAndEnabled) {
+					agent.enabled = true;
+				}
+				follow.FollowThem (animate, agent, playerLocation, skeleControl, combatScript,playerScript);
+				doneAttacking = true;
+			} else {
+				if (agent.isActiveAndEnabled) {
+					agent.Resume ();
+					firstTime = true;
+					if (doneAttacking) {
+						if (doItOnce) {
+							doItOnce = false;
+							skeleControl.setIdle (animate);
+							StartCoroutine (SleepForIdle ((animate.GetCurrentAnimatorStateInfo (0).length)));
+						}
+					} else {
+						if (!animate.GetBool ("isIdle")) {
+							pathFollowScript.Patrol (pathScript.actualPath, agent, animate, skeleControl);
+						}
 					}
 				}
 			}
@@ -76,7 +81,7 @@ public class Master_Control : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
-		health = health - 0;
+		health = health - 2;
 	}
 
 //	IEnumerator SleepForDam(){
@@ -94,8 +99,10 @@ public class Master_Control : MonoBehaviour {
 	}
 
 	IEnumerator SleepForDeath(){
-		agent.enabled = false;
+		playerScript.addExp (1);
+		// get rid of box collider soon please
 		yield return new WaitForSecondsRealtime(4f);
+		agent.enabled = false;
 		Destroy (gameObject);
 	}
 }

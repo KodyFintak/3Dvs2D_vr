@@ -51,8 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af9c56bc1a2214bc3b0c773f1285beca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeleton: {fileID: 1000010019200314, guid: 1bf4ce829ac734407909a860fd4e60ab, type: 2}
+  skeleton: {fileID: 0}
   animate: {fileID: 0}
-  skeleClone: {fileID: 0}
   moveAhead: 3
-  pathScript: {fileID: 0}

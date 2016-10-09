@@ -4,18 +4,24 @@ using System.Collections;
 public class Combat : MonoBehaviour {
 	public float distance;
 
-	public void Hit(Transform playerLocation){
-		StartCoroutine (SleepForAttack (playerLocation));
+	public void Hit(Transform playerLocation,Player playerScript){
+		StartCoroutine (SleepForAttack (playerLocation,playerScript));
 	}
 		
-	IEnumerator SleepForAttack(Transform playerLocation){
+	IEnumerator SleepForAttack(Transform playerLocation,Player playerScript){
 		yield return new WaitForSecondsRealtime(1f);
-		RaycastHit hit;
-		if (Physics.Raycast (transform.position, playerLocation.position - transform.position,out hit)) {
-			distance = hit.distance;
-			if (hit.distance <= 5) {
-				hit.collider.SendMessage ("AIMelee", 1, SendMessageOptions.DontRequireReceiver);
-			}
+		if (Vector3.Distance (playerLocation.position, this.transform.position) <= 6) {
+			playerScript.AIMelee (1);
 		}
+
+//		if (Physics.Raycast (transform.position, playerLocation.transform.position - transform.position,out hit)) {
+//			distance = hit.distance;
+//			Debug.DrawLine (transform.position, hit.point, Color.red);
+//			if (hit.distance <= 5) {
+//				Debug.Log ("shit");
+//				hit.transform.SendMessage ("AIMelee", 1, SendMessageOptions.DontRequireReceiver);
+//			}
+//		}
+
 	}
 }
