@@ -3,16 +3,9 @@ using System.Collections;
 
 public class MeleeSystem : MonoBehaviour {
 
-	public int Damage = 10;
-	public float Distance ;
-	public float MaxDistance = 2;
-	
-	// Update is called once per frame
-	void Update () {
-		
-
-
-	}
+	int Damage = 1;
+	public float Distance;
+	float MaxDistance = 5;
 
 	public void swing(){
 		if(!gameObject.GetComponent<Animation> ().IsPlaying("Swing")){
@@ -21,10 +14,8 @@ public class MeleeSystem : MonoBehaviour {
 			if (Physics.Raycast (transform.position, transform.TransformDirection(Vector3.forward),out hit)) {
 				Distance = hit.distance;
 				if (Distance < MaxDistance) {
-					hit.transform.SendMessage ("MeleeDamage", Damage, SendMessageOptions.DontRequireReceiver);
+					hit.collider.SendMessage ("MeleeDamage", Damage, SendMessageOptions.DontRequireReceiver);
 				}
-
-
 			}
 		}
 	}
