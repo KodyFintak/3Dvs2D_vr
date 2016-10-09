@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class Player : MonoBehaviour {
@@ -66,10 +65,18 @@ public class Player : MonoBehaviour {
         {
             xp.CurrentVal += 1;
         }
-		if (Input.GetKey (KeyCode.Escape)) {
-			SceneManager.LoadScene ("Lobby");
-		}
     }
 
+	public void AIMelee(int damage){
+		health.CurrentVal = health.CurrentVal - damage;
+	}
+
+	public void addExp(int expPoint){
+		xp.CurrentVal = xp.CurrentVal + expPoint;
+	}
+//	void OnTriggerEnter(Collider col){
+//		health.CurrentVal = health.CurrentVal - 1;
+//		Debug.Log ("hi damage");
+//	}
 
 }
