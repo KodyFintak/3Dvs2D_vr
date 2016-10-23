@@ -1,0 +1,227 @@
+-debug
+-target:library
+-nowarn:0169
+-out:'Temp/Assembly-CSharp.dll'
+-r:'/Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/Managed/UnityEngine.dll'
+-r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Standalone/UnityEngine.Networking.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Standalone/UnityEngine.UI.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll'
+-r:'Assets/External Resources/Plugins/Photon3Unity3D.dll'
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_4_0
+-define:UNITY_5_4
+-define:UNITY_5
+-define:UNITY_ANALYTICS
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_EDITOR_RETINA
+-define:ENABLE_RETINA_GUISTYLES
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_SPRITE_POLYGON
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:INCLUDE_DIRECTX12
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
+-define:ENABLE_EDITOR_TESTS_RUNNER
+-define:UNITY_STANDALONE_OSX
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GAMECENTER
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:CROSS_PLATFORM_INPUT
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/CustomTypes.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Enums.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Extensions.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/FriendInfo.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/GizmoType.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/LoadbalancingPeer.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/PhotonClasses.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/PhotonHandler.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/PhotonLagSimulationGui.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/PhotonPlayer.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/PhotonStatsGui.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/PhotonStreamQueue.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/PhotonView.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/PingCloudRegions.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/RPC.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Room.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/RoomInfo.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/RpcIndexComponent.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/ServerSettings.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/SocketUdp.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/SocketWebTcp.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonAnimatorView.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonRigidbody2DView.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonRigidbodyView.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformView.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewPositionControl.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewPositionModel.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewRotationControl.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewRotationModel.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewScaleControl.cs'
+'Assets/External Resources/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonTransformViewScaleModel.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/ConnectAndJoinRandom.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/HighlightOwnedGameObj.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/InRoomChat.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/InRoomRoundTimer.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/InRoomTime.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/InputToEvent.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/ManualPhotonViewAllocator.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/MoveByKeys.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/OnAwakeUsePhotonView.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/OnClickDestroy.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/OnClickInstantiate.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/OnClickLoadSomething.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/OnJoinedInstantiate.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/OnStartDelete.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/PickupItem.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/PickupItemSimple.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/PickupItemSyncer.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/PointedAtGameObjectInfo.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/PunPlayerScores.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/PunTeams.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/PunTurnManager.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/QuitOnEscapeOrBack.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/ServerTime.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/ShowInfoOfPlayer.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/ShowStatusWhenConnecting.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/SmoothSyncMovement.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/SupportLogger.cs'
+'Assets/External Resources/Photon Unity Networking/UtilityScripts/TimeKeeper.cs'
+'Assets/External Resources/PhotonChatApi/ChatChannel.cs'
+'Assets/External Resources/PhotonChatApi/ChatClient.cs'
+'Assets/External Resources/PhotonChatApi/ChatDisconnectCause.cs'
+'Assets/External Resources/PhotonChatApi/ChatEventCode.cs'
+'Assets/External Resources/PhotonChatApi/ChatOperationCode.cs'
+'Assets/External Resources/PhotonChatApi/ChatParameterCode.cs'
+'Assets/External Resources/PhotonChatApi/ChatPeer.cs'
+'Assets/External Resources/PhotonChatApi/ChatState.cs'
+'Assets/External Resources/PhotonChatApi/ChatUserStatus.cs'
+'Assets/External Resources/PhotonChatApi/IChatClientListener.cs'
+'Assets/External Resources/Plugins/WebSocket/WebSocket.cs'
+'Assets/External/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs'
+'Assets/External/Standard Assets/Characters/FirstPersonCharacter/Scripts/HeadBob.cs'
+'Assets/External/Standard Assets/Characters/FirstPersonCharacter/Scripts/MouseLook.cs'
+'Assets/External/Standard Assets/Characters/FirstPersonCharacter/Scripts/RigidbodyFirstPersonController.cs'
+'Assets/External/Standard Assets/Characters/RollerBall/Scripts/Ball.cs'
+'Assets/External/Standard Assets/Characters/RollerBall/Scripts/BallUserControl.cs'
+'Assets/External/Standard Assets/Characters/ThirdPersonCharacter/Scripts/AICharacterControl.cs'
+'Assets/External/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs'
+'Assets/External/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/ButtonHandler.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/InputAxisScrollbar.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/Joystick.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/MobileControlRig.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/MobileInput.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/TiltInput.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/TouchPad.cs'
+'Assets/External/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs'
+'Assets/External/Standard Assets/Environment/Water (Basic)/Scripts/WaterBasic.cs'
+'Assets/External/Standard Assets/Environment/Water/Water/Scripts/Displace.cs'
+'Assets/External/Standard Assets/Environment/Water/Water/Scripts/GerstnerDisplace.cs'
+'Assets/External/Standard Assets/Environment/Water/Water/Scripts/MeshContainer.cs'
+'Assets/External/Standard Assets/Environment/Water/Water/Scripts/PlanarReflection.cs'
+'Assets/External/Standard Assets/Environment/Water/Water/Scripts/SpecularLighting.cs'
+'Assets/External/Standard Assets/Environment/Water/Water/Scripts/Water.cs'
+'Assets/External/Standard Assets/Environment/Water/Water/Scripts/WaterBase.cs'
+'Assets/External/Standard Assets/Environment/Water/Water/Scripts/WaterTile.cs'
+'Assets/External/Standard Assets/Utility/ActivateTrigger.cs'
+'Assets/External/Standard Assets/Utility/AlphaButtonClickMask.cs'
+'Assets/External/Standard Assets/Utility/AutoMobileShaderSwitch.cs'
+'Assets/External/Standard Assets/Utility/AutoMoveAndRotate.cs'
+'Assets/External/Standard Assets/Utility/CameraRefocus.cs'
+'Assets/External/Standard Assets/Utility/CurveControlledBob.cs'
+'Assets/External/Standard Assets/Utility/DragRigidbody.cs'
+'Assets/External/Standard Assets/Utility/DynamicShadowSettings.cs'
+'Assets/External/Standard Assets/Utility/EventSystemChecker.cs'
+'Assets/External/Standard Assets/Utility/FOVKick.cs'
+'Assets/External/Standard Assets/Utility/FPSCounter.cs'
+'Assets/External/Standard Assets/Utility/FollowTarget.cs'
+'Assets/External/Standard Assets/Utility/ForcedReset.cs'
+'Assets/External/Standard Assets/Utility/LerpControlledBob.cs'
+'Assets/External/Standard Assets/Utility/ObjectResetter.cs'
+'Assets/External/Standard Assets/Utility/ParticleSystemDestroyer.cs'
+'Assets/External/Standard Assets/Utility/PlatformSpecificContent.cs'
+'Assets/External/Standard Assets/Utility/SimpleActivatorMenu.cs'
+'Assets/External/Standard Assets/Utility/SimpleMouseRotator.cs'
+'Assets/External/Standard Assets/Utility/SmoothFollow.cs'
+'Assets/External/Standard Assets/Utility/TimedObjectActivator.cs'
+'Assets/External/Standard Assets/Utility/TimedObjectDestructor.cs'
+'Assets/External/Standard Assets/Utility/WaypointCircuit.cs'
+'Assets/External/Standard Assets/Utility/WaypointProgressTracker.cs'
+'Assets/Paths/Draw_Path.cs'
+'Assets/Paths/PointScript.cs'
+'Assets/Player/ExplodeonContact.cs'
+'Assets/Player/MeleeSystem.cs'
+'Assets/Player/SpellCast.cs'
+'Assets/Scripts/Benny Castle Gate Opener.cs'
+'Assets/Scripts/CameraSwitch.cs'
+'Assets/Scripts/LoadSceneOnClick.cs'
+'Assets/Scripts/PhotonNetworkManager.cs'
+'Assets/Scripts/UI ELEMENTS/BarScript.cs'
+'Assets/Scripts/UI ELEMENTS/Player.cs'
+'Assets/Scripts/UI ELEMENTS/Stat.cs'
+'Assets/Scripts/clickDragSpawn.cs'
+'Assets/Skeleton_FullPrefab/Combat.cs'
+'Assets/Skeleton_FullPrefab/Follow.cs'
+'Assets/Skeleton_FullPrefab/Master_Control.cs'
+'Assets/Skeleton_FullPrefab/PathingFollow.cs'
+'Assets/Skeleton_FullPrefab/Patrol.cs'
+'Assets/Skeleton_FullPrefab/SkelSpawn.cs'
+'Assets/Skeleton_FullPrefab/Skel_Control.cs'
+-r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
