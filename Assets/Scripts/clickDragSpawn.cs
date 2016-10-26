@@ -16,7 +16,8 @@ public class clickDragSpawn : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
+		//spawnPoints = GameObject.FindObjectsOfType<EnemySpawn> (); 
 	}
 	
 
@@ -41,24 +42,28 @@ public class clickDragSpawn : MonoBehaviour {
 			var pos = Input.mousePosition;
 			pos.z = -Camera.main.transform.position.z;
 			pos = Camera.main.ScreenToWorldPoint(pos);
-			spawn = Instantiate(prefab, pos, Quaternion.identity) as Transform;
+			//spawn = PhotonNetwork.Instantiate("Skeleton_FullPrefab", pos, Quaternion.identity,0) as Transform;
 		}
 
 
 		if (e.type == EventType.MouseDown && rect1.Contains (e.mousePosition)) {
-			Instantiate(enemy1, spawnPoints[0].position, spawnPoints[0].rotation);
+			Transform mySpawnSpot = spawnPoints [0];
+			PhotonNetwork.Instantiate("Skeleton_FullPr efab", mySpawnSpot.transform.position, mySpawnSpot.transform.rotation,0);
 		}
 
 		if (e.type == EventType.MouseDown && rect2.Contains (e.mousePosition)) {
-			Instantiate(enemy1, spawnPoints[1].position, spawnPoints[1].rotation);
+			Transform mySpawnSpot = spawnPoints [1];
+			PhotonNetwork.Instantiate("Skeleton_FullPrefab", mySpawnSpot.transform.position, mySpawnSpot.transform.rotation,0);
 		}
 
 		if (e.type == EventType.MouseDown && rect3.Contains (e.mousePosition)) {
-			Instantiate(enemy1, spawnPoints[2].position, spawnPoints[2].rotation);
+			Transform mySpawnSpot = spawnPoints [2];
+			PhotonNetwork.Instantiate("Skeleton_FullPrefab", mySpawnSpot.transform.position, mySpawnSpot.transform.rotation,0);
 		}
 
 		if (e.type == EventType.MouseDown && rect4.Contains (e.mousePosition)) {
-			Instantiate(enemy1, spawnPoints[3].position, spawnPoints[3].rotation);
+			Transform mySpawnSpot = spawnPoints [3];
+			PhotonNetwork.Instantiate("Skeleton_FullPrefab", mySpawnSpot.transform.position, mySpawnSpot.transform.rotation,0);
 		}
 		GUI.Button (rect, "Spawn");
 		GUI.Button (rect1, "Spot 1");

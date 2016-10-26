@@ -4,10 +4,10 @@ using UnityEngine.UI;
 
 using System.Collections.Generic;
 
-public class PhotonNetworkManager : MonoBehaviour {
+public class PhotonNetworkManager1 : MonoBehaviour {
 
 	//public Camera standbyCamera;
-	public static PhotonNetworkManager instance = null;
+	public static PhotonNetworkManager1 instance = null;
 	SpawnSpot[] spawnSpots;
 
 	public InputField room_name;
@@ -140,6 +140,7 @@ public class PhotonNetworkManager : MonoBehaviour {
 			Debug.LogError ("Nope.");
 			return;
 		}
+        SceneManager.LoadScene(1);
 		SpawnSpot mySpawnSpot = spawnSpots [Random.Range (0, spawnSpots.Length)];
 
 		//standbyCamera.enabled = false;

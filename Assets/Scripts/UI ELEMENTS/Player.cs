@@ -16,9 +16,9 @@ public class Player : MonoBehaviour {
 
     private void Awake()
     {
-        health.Initialize();
-        mana.Initialize();
-        xp.Initialize();
+        //health.Initialize();
+        //mana.Initialize();
+        //xp.Initialize();
     }
 		
 

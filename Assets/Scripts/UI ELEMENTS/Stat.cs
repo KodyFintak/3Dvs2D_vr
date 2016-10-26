@@ -4,12 +4,12 @@ using System;
 [Serializable]
 public class Stat
 {
-    [SerializeField]
+   // [SerializeField]
     private BarScript bar;
 
-    [SerializeField]
+    //[SerializeField]
     private float maxVal;
-    [SerializeField]
+    //[SerializeField]
     private float currentVal;
 
     public float CurrentVal

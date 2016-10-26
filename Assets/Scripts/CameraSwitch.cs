@@ -18,17 +18,17 @@ public class CameraSwitch : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown("0")){
+		if(Input.GetKeyDown("1")){
 			CameraOne.enabled = false;
 			CameraTwo.enabled = false;
 			FirstPersonCharacter.enabled = true;
 		}
-		if(Input.GetKeyDown("1")){
+		if(Input.GetKeyDown("2")){
 			FirstPersonCharacter.enabled = false;
 			CameraTwo.enabled = false;
 			CameraOne.enabled= true;	
 		}
-		if (Input.GetKeyDown ("2")) {
+		if (Input.GetKeyDown ("3")) {
 			FirstPersonCharacter.enabled = false;
 			CameraOne.enabled = false;
 			CameraTwo.enabled = true;

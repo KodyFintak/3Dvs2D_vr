@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Benny_Castle_Gate_Opener : MonoBehaviour {
+public class GateOpener : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

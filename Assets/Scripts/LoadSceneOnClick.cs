@@ -5,9 +5,11 @@ using System.Collections;
 
 public class LoadSceneOnClick : MonoBehaviour {
 
+	public GameObject player;
+
 	public void LoadByIndex(int sceneIndex)
 	{
-		SceneManager.LoadScene (sceneIndex);
+		Instantiate( player);
 	}
 
 }
