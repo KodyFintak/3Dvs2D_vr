@@ -156,4 +156,10 @@ public class PhotonNetworkManager : MonoBehaviour {
 	{
 		Debug.Log ("Room created.");
 	}
+
+    //void OnPhotonPlayerConnected(PhotonPlayer newplayer)
+    //{
+    //    if (instantiatedAvatars == false PhotonNetwork.countOfPlayers == 2)
+    //        {
+    //}
 }

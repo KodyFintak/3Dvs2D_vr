@@ -505,7 +505,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1174665575}
     - target: {fileID: 224000013495442014, guid: 7a44cd79213cdaa49b71cffec22ede19,
         type: 2}
       propertyPath: m_AnchorMin.y
@@ -629,6 +629,17 @@ Prefab:
     - target: {fileID: 1000014097489952, guid: 7a44cd79213cdaa49b71cffec22ede19, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014192755398, guid: 7a44cd79213cdaa49b71cffec22ede19,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1000011443950066, guid: 6d0ae49efcb259a48b2a02a918b3ce6e,
+        type: 2}
+    - target: {fileID: 114000010935492122, guid: 7a44cd79213cdaa49b71cffec22ede19,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonEvents
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a44cd79213cdaa49b71cffec22ede19, type: 2}
@@ -1357,8 +1368,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c319f1147e842c42aeeb3770ffe28c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  connectionText: {fileID: 0}
+  spawnPoints: []
+  sceneCamera: {fileID: 1192045350}
   room_name: {fileID: 1088204012}
   roomPrefab: {fileID: 726786527}
+--- !u!20 &1192045350 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20000010802612578, guid: 7a44cd79213cdaa49b71cffec22ede19,
+    type: 2}
+  m_PrefabInternal: {fileID: 611810730}
 --- !u!1 &1193324009
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,6 +41,8 @@ GameObject:
   - 114: {fileID: 114000013108369546}
   - 114: {fileID: 114000012780484180}
   - 114: {fileID: 114000013112385038}
+  - 114: {fileID: 114000013141931094}
+  - 114: {fileID: 114000010619963754}
   m_Layer: 0
   m_Name: Dungeoneer
   m_TagString: Untagged
@@ -118,7 +120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4000010844238082
 Transform:
   m_ObjectHideFlags: 1
@@ -434,6 +436,19 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114000010619963754
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011443950066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cd205ce2a94cf24faf15cbbdeaa6729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  marco: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
+  polo: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
 --- !u!114 &114000012227644054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -490,7 +505,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011443950066}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
@@ -565,8 +580,19 @@ MonoBehaviour:
     BobAmount: 0
   m_StepInterval: 5
   m_FootstepSounds: []
-  m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
+  m_JumpSound: {fileID: 8300000, guid: 0e21d642e83a05048b33f78da9470e9a, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+--- !u!114 &114000013141931094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011443950066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4a89b7956128241b3c047bb78f5f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000014287422366
 MonoBehaviour:
   m_ObjectHideFlags: 1

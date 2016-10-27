@@ -2,18 +2,24 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+using System.Collections;
 using System.Collections.Generic;
 
-public class PhotonNetworkManager1 : MonoBehaviour {
-
-	//public Camera standbyCamera;
+public class PhotonNetworkManager1 : Photon.PunBehaviour {
+    
 	public static PhotonNetworkManager1 instance = null;
-	SpawnSpot[] spawnSpots;
 
-	public InputField room_name;
-	//public InputField max_players;
+    [SerializeField]
+    Text connectionText;
+    [SerializeField]
+    Transform[] spawnPoints;
+    [SerializeField]
+    Camera sceneCamera;
+
+    public InputField room_name;
 	public GameObject roomPrefab;
 	private List<GameObject> roomPrefabs = new List<GameObject>();
+    GameObject player;
 
 	void Awake()
 	{
@@ -27,9 +33,14 @@ public class PhotonNetworkManager1 : MonoBehaviour {
 
 	void Start()
 	{
-		spawnSpots = GameObject.FindObjectsOfType<SpawnSpot> ();
 		PhotonNetwork.ConnectUsingSettings ("0.2.0");
+        //PhotonNetwork.automaticallySyncScene = true;
 	}
+
+    void Update()
+    {
+        connectionText.text = PhotonNetwork.connectionStateDetailed.ToString();
+    }
 
 
 	public void ButtonEvents(string EVENT)
@@ -40,7 +51,6 @@ public class PhotonNetworkManager1 : MonoBehaviour {
 				
 				RoomOptions RO = new RoomOptions ();
 				RO.MaxPlayers = 4;
-				//RO.MaxPlayers = byte.Parse (max_players.text);
 				PhotonNetwork.CreateRoom (room_name.text,RO,TypedLobby.Default);
 
 			}
@@ -70,7 +80,6 @@ public class PhotonNetworkManager1 : MonoBehaviour {
 		}
 
 		for (int i = 0; i < PhotonNetwork.GetRoomList ().Length; i++) {
-			//Debug.Log (PhotonNetwork.GetRoomList()[i].name);
 			GameObject g = Instantiate(roomPrefab);
 			g.transform.SetParent (roomPrefab.transform.parent);
 
@@ -120,7 +129,7 @@ public class PhotonNetworkManager1 : MonoBehaviour {
 		GUILayout.Label (PhotonNetwork.connectionStateDetailed.ToString ());
 	}
 
-	void OnJoinedLobby()
+	public override void OnJoinedLobby()
 	{
 		Debug.Log ("fail");
 		Invoke("RefreshRoomList", 0.1f);
@@ -135,26 +144,29 @@ public class PhotonNetworkManager1 : MonoBehaviour {
 	{
 
 		Debug.Log ("Room joined");
-
-		if (spawnSpots == null) {
-			Debug.LogError ("Nope.");
-			return;
-		}
-        SceneManager.LoadScene(1);
-		SpawnSpot mySpawnSpot = spawnSpots [Random.Range (0, spawnSpots.Length)];
-
-		//standbyCamera.enabled = false;
-
-		GameObject player = PhotonNetwork.Instantiate ("Dungeoneer", mySpawnSpot.transform.position, mySpawnSpot.transform.rotation, 0);
-		//GameObject player = PhotonNetwork.Instantiate("Dungeoneer", Vector3.zero, Quaternion.identity, 0);
-
-		//player.transform.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = true;
-		player.transform.GetComponent<CharacterController>().enabled = true;
-		player.transform.FindChild ("FirstPersonCharacter").gameObject.SetActive (true);
-	}
+        PhotonNetwork.LoadLevel(1);
+        StartSpawnProcess(0f);
+    }
 
 	void OnCreatedRoom()
 	{
 		Debug.Log ("Room created.");
 	}
+
+    void StartSpawnProcess (float respawnTime)
+    {
+        sceneCamera.enabled = true;
+        StartCoroutine("SpawnPlayer", respawnTime);
+    }
+
+    IEnumerator SpawnPlayer(float respawnTime)
+    {
+        yield return new WaitForSeconds(respawnTime);
+
+        int index = Random.Range(0, spawnPoints.Length);
+        player = PhotonNetwork.Instantiate("Dungeoneer", Vector3.zero, Quaternion.identity, 0);
+        sceneCamera.enabled = false;
+        player.transform.FindChild("FirstPersonCharacter").gameObject.SetActive(true);
+        player.transform.GetComponent<CharacterController>().enabled = true;
+    }
 }

@@ -42,4 +42,6 @@ MonoBehaviour:
   - PunRespawn
   - RequestForPickupItems
   - RequestForPickupTimes
+  - Marco
+  - Polo
   DisableAutoOpenWizard: 1
