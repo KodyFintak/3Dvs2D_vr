@@ -44,6 +44,7 @@ GameObject:
   - 114: {fileID: 114000013141931094}
   - 114: {fileID: 114000010619963754}
   - 114: {fileID: 114000013809383140}
+  - 114: {fileID: 114000014043581684}
   m_Layer: 0
   m_Name: Dungeoneer
   m_TagString: Untagged
@@ -477,12 +478,12 @@ MonoBehaviour:
   group: 0
   prefixBackup: -1
   observed: {fileID: 0}
-  synchronization: 1
+  synchronization: 3
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
   ownershipTransfer: 0
   ObservedComponents:
-  - {fileID: 4000011322773274}
+  - {fileID: 114000014043581684}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
@@ -498,6 +499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4bba7bc4d9405c4cbd51391ddbe6d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 24
+  mana: 8
+  xp: 40
   spell: {fileID: 114000014287422366}
   melee: {fileID: 114000012227644054}
 --- !u!114 &114000013112385038
@@ -506,7 +510,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011443950066}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
@@ -580,9 +584,19 @@ MonoBehaviour:
     BobDuration: 0
     BobAmount: 0
   m_StepInterval: 5
-  m_FootstepSounds: []
-  m_JumpSound: {fileID: 8300000, guid: 0e21d642e83a05048b33f78da9470e9a, type: 3}
-  m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  m_FootstepSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_JumpSound: {fileID: 0}
+  m_LandSound: {fileID: 0}
 --- !u!114 &114000013141931094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -610,6 +624,67 @@ MonoBehaviour:
   heightSmoothLag: 0.3
   centerOffset: {x: 0, y: 0, z: 0}
   followOnStart: 1
+--- !u!114 &114000014043581684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011443950066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PositionModel:
+    SynchronizeEnabled: 1
+    TeleportEnabled: 1
+    TeleportIfDistanceGreaterThan: 3
+    InterpolateOption: 4
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 10
+    InterpolateMoveTowardsAcceleration: 2
+    InterpolateMoveTowardsDeceleration: 2
+    InterpolateSpeedCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: -1
+        value: 0
+        inSlope: 0
+        outSlope: Infinity
+        tangentMode: 0
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+      - time: 4
+        value: 4
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ExtrapolateOption: 0
+    ExtrapolateSpeed: 1
+    ExtrapolateIncludingRoundTripTime: 1
+    ExtrapolateNumberOfStoredPositions: 1
+    DrawErrorGizmo: 1
+  m_RotationModel:
+    SynchronizeEnabled: 1
+    InterpolateOption: 1
+    InterpolateRotateTowardsSpeed: 180
+    InterpolateLerpSpeed: 5
+  m_ScaleModel:
+    SynchronizeEnabled: 0
+    InterpolateOption: 0
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 0
 --- !u!114 &114000014287422366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -652,7 +727,7 @@ CharacterController:
   m_GameObject: {fileID: 1000011443950066}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Height: 1.8
   m_Radius: 0.5

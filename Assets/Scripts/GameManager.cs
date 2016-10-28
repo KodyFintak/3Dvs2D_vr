@@ -7,6 +7,8 @@ using System.Collections;
 public class GameManager : Photon.PunBehaviour {
     [SerializeField]
     SpawnSpot[] spawnSpots;
+    [Tooltip("The prefab to use for representing the player")]
+    public GameObject playerPrefab;
 
 
     public void OnLeftRoom()
@@ -22,7 +24,30 @@ public class GameManager : Photon.PunBehaviour {
 
     void Start()
     {
-        spawnSpots = GameObject.FindObjectsOfType<SpawnSpot>();
+        if (playerPrefab == null)
+        {
+            Debug.LogError("<Color=Red><a>Missing</a></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'", this);
+        }
+        else
+        {
+            if (Player.LocalPlayerInstance == null)
+            {
+                Debug.Log("We are Instantiating LocalPlayer from " + Application.loadedLevelName);
+                spawnSpots = GameObject.FindObjectsOfType<SpawnSpot>();
+                if (spawnSpots == null)
+                {
+                    Debug.LogError("Nope.");
+                    return;
+                }
+                SpawnSpot mySpawnSpot = spawnSpots[UnityEngine.Random.Range(0, spawnSpots.Length)];
+                // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
+                PhotonNetwork.Instantiate(this.playerPrefab.name, mySpawnSpot.transform.position, mySpawnSpot.transform.rotation, 0);
+            }
+            else
+            {
+                Debug.Log("Ignoring scene load for " + Application.loadedLevelName);
+            }
+        }
 
     }
 

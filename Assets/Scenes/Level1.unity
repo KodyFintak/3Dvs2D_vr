@@ -13557,6 +13557,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 807568853}
   m_Mesh: {fileID: 4300000, guid: 0b15b14f67ff0494f81dbb6940a8e3e6, type: 3}
+--- !u!114 &812658780 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012535358610, guid: 197f8644b8dae4848aa207315954f401,
+    type: 2}
+  m_PrefabInternal: {fileID: 1854272536}
+  m_Script: {fileID: 11500000, guid: a498b95416365434c8e11d1b5b4f13de, type: 3}
 --- !u!1 &813538939
 GameObject:
   m_ObjectHideFlags: 0
@@ -26674,6 +26680,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
+        type: 2}
+      propertyPath: spawnSpots.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012473727326, guid: 002a7d57181f3e740a076d69224739fd, type: 2}
       propertyPath: m_LocalPosition.x
       value: 575
@@ -26706,6 +26717,32 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
+        type: 2}
+      propertyPath: spawnSpots.Array.data[0]
+      value: 
+      objectReference: {fileID: 812658780}
+    - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
+        type: 2}
+      propertyPath: spawnSpots.Array.data[1]
+      value: 
+      objectReference: {fileID: 123900099}
+    - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
+        type: 2}
+      propertyPath: spawnSpots.Array.data[2]
+      value: 
+      objectReference: {fileID: 1572888933}
+    - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
+        type: 2}
+      propertyPath: spawnSpots.Array.data[3]
+      value: 
+      objectReference: {fileID: 240988605}
+    - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
+        type: 2}
+      propertyPath: playerPrefab
+      value: 
+      objectReference: {fileID: 1000011443950066, guid: 6d0ae49efcb259a48b2a02a918b3ce6e,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 002a7d57181f3e740a076d69224739fd, type: 2}
   m_IsPrefabParent: 0

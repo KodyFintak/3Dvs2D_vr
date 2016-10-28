@@ -38,23 +38,23 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
 
     void Awake()
     {
-        //if (instance == null)
-        //{
-        //    instance = this;
-        //    DontDestroyOnLoad(gameObject.transform);
-        //}
-        //else if (instance != this)
-        //{
-        //    Destroy(gameObject);
-        //}
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject.transform);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
         PhotonNetwork.logLevel = LogLevel;
-
         PhotonNetwork.autoJoinLobby = false;
         PhotonNetwork.automaticallySyncScene = true;
     }
 
     void Start()
     {
+        Debug.Log(PhotonNetwork.countOfPlayers);
     }
 
     void RefreshRoomList()
@@ -140,44 +140,13 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
         if (PhotonNetwork.room.playerCount == 1)
         {
             Debug.Log("We load the 'Room for 1' ");
-
-            // #Critical
-            // Load the Room Level. 
-            PhotonNetwork.LoadLevel("Level1");
+            PhotonNetwork.LoadLevel("Level2");
         }
-        //SpawnSpot[] spawnSpots = GameObject.FindObjectsOfType<SpawnSpot>();
-        //Debug.Log(PhotonNetwork.playerName);
-
-        //Debug.Log(spawnSpots.ToString());
-
-        //if (spawnSpots == null)
-        //{
-        //    Debug.Log("Nope.");
-        //}
-
-        //int index = Random.Range(0, spawnPoints.Length);
-        //SpawnSpot mySpawnSpot = spawnSpots[Random.Range(1, spawnSpots.Length)];
-        //StartSpawnProcess(0f);
     }
 
     void OnCreatedRoom()
     {
         Debug.Log("Room created.");
-    }
-
-    void StartSpawnProcess(float respawnTime)
-    {
-        StartCoroutine("SpawnPlayer", respawnTime);
-    }
-
-    IEnumerator SpawnPlayer(float respawnTime)
-    {
-        yield return new WaitForSeconds(respawnTime);
-
-
-        player = PhotonNetwork.Instantiate("Dungeoneer", Vector3.zero, Quaternion.identity, 0);
-        player.transform.FindChild("FirstPersonCharacter").gameObject.SetActive(true);
-        player.transform.GetComponent<CharacterController>().enabled = true;
     }
 
     #endregion
