@@ -7027,7 +7027,6 @@ GameObject:
   - 124: {fileID: 452155295}
   - 81: {fileID: 452155294}
   - 114: {fileID: 452155299}
-  - 114: {fileID: 452155300}
   m_Layer: 0
   m_Name: StandbyCamera
   m_TagString: Untagged
@@ -7114,28 +7113,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bae81627c1b7e44a99973df811569e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4000013031143752, guid: 1bf4ce829ac734407909a860fd4e60ab, type: 2}
-  enemy1: {fileID: 4000013031143752, guid: 1bf4ce829ac734407909a860fd4e60ab, type: 2}
+  enemy1: {fileID: 1000013412457412, guid: 1bf4ce829ac734407909a860fd4e60ab, type: 2}
   spawnPoints:
   - {fileID: 1945342313}
   - {fileID: 1625656188}
   - {fileID: 731889036}
   - {fileID: 441334327}
---- !u!114 &452155300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 452155293}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b4b3cf4753e11d449abbe81a094c135, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FirstPersonCharacter: {fileID: 20000012926718324, guid: 6d0ae49efcb259a48b2a02a918b3ce6e,
-    type: 2}
-  CameraOne: {fileID: 452155297}
-  CameraTwo: {fileID: 0}
+  pathScript: {fileID: 0}
+  distance: {x: 0, y: 0, z: 0}
+  path: []
+  op: {fileID: 0}
+  key: {fileID: 1000010549460492, guid: 737853e9842fc4e0fab2962ad23004e7, type: 2}
+  tempNode: {fileID: 1000011609291056, guid: 28198168ce15f6e4fb61f463ace01660, type: 2}
+  pathCounter: 0
+  keyCounter: 0
 --- !u!1 &463120597
 GameObject:
   m_ObjectHideFlags: 0
@@ -9798,7 +9789,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000014097489952, guid: 7a44cd79213cdaa49b71cffec22ede19, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7a44cd79213cdaa49b71cffec22ede19, type: 2}

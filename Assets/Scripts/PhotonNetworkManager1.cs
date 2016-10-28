@@ -139,8 +139,7 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
         Debug.Log("Room joined");
         if (PhotonNetwork.room.playerCount == 1)
         {
-            Debug.Log("We load the 'Room for 1' ");
-            PhotonNetwork.LoadLevel("Level2");
+            PhotonNetwork.LoadLevel("Level1");
         }
     }
 
@@ -165,11 +164,9 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
             case "CreateRoom":
                 if (PhotonNetwork.JoinLobby())
                 {
-
                     RoomOptions RO = new RoomOptions();
                     RO.MaxPlayers = 4;
                     PhotonNetwork.CreateRoom(room_name.text, RO, TypedLobby.Default);
-
                 }
                 break;
             case "RefreshButton":
@@ -188,13 +185,15 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
 
     public override void OnJoinedLobby()
     {
-        Debug.Log("fail");
         Invoke("RefreshRoomList", 0.1f);
     }
 
     public override void OnConnectedToMaster()
     {
         Debug.Log("Launcher: OnConnectedToMaster() was called by PUN");
+
+        if (PhotonNetwork.JoinLobby())
+            RefreshRoomList();
     }
 
     public override void OnDisconnectedFromPhoton()

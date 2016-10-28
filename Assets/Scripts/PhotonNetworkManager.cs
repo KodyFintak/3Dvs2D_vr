@@ -37,7 +37,7 @@ public class PhotonNetworkManager : MonoBehaviour {
 		switch (EVENT) {
 		case "CreateRoom":
 			if (PhotonNetwork.JoinLobby ()) {
-				
+
 				RoomOptions RO = new RoomOptions ();
 				RO.MaxPlayers = 4;
 				//RO.MaxPlayers = byte.Parse (max_players.text);

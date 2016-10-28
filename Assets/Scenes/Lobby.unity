@@ -638,12 +638,12 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1174665575}
     - target: {fileID: 114000010312265160, guid: 7a44cd79213cdaa49b71cffec22ede19,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1174665575}
     - target: {fileID: 114000013178705052, guid: 7a44cd79213cdaa49b71cffec22ede19,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -879,6 +879,16 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000013178705052, guid: 7a44cd79213cdaa49b71cffec22ede19,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonEvents
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010312265160, guid: 7a44cd79213cdaa49b71cffec22ede19,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ButtonEvents
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014202345274, guid: 7a44cd79213cdaa49b71cffec22ede19,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ButtonEvents
@@ -1957,7 +1967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   room_name: {fileID: 1088204012}
   roomPrefab: {fileID: 726786527}
-  LogLevel: 1
+  LogLevel: 2
   connectionText: {fileID: 0}
   spawnPoints: []
 --- !u!1 &1193324009
