@@ -48,7 +48,7 @@ public class GameManager : Photon.PunBehaviour {
             if (Player.LocalPlayerInstance == null)
             {
                 Debug.Log("We are Instantiating LocalPlayer from " + Application.loadedLevelName);
-                if (Playercount == 0)
+                if (PhotonNetwork.player.isMasterClient)
                 {
                     PhotonNetwork.Instantiate(this.dMPrefab.name, new Vector3(77,100,0), Quaternion.Euler(90f,0f,0f), 0);
                 }
@@ -80,8 +80,11 @@ public class GameManager : Photon.PunBehaviour {
         {
             Debug.LogError("PhotonNetwork: Trying to Load a level but we are not the master Client.");
         }
-        Debug.Log("PhotonNetwork : Loading Level : 1");
-        PhotonNetwork.LoadLevel("Level1");
+        else
+        {
+            Debug.Log("PhotonNetwork : Loading Level : 1");
+            PhotonNetwork.LoadLevel("Level1");
+        }
     }
     #endregion
 
