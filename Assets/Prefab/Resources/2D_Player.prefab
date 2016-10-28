@@ -25,7 +25,7 @@ GameObject:
   - 81: {fileID: 81000011354075744}
   - 114: {fileID: 114000010370532866}
   - 114: {fileID: 114000012763124822}
-  - 114: {fileID: 114000010922607134}
+  - 114: {fileID: 114000013895963534}
   m_Layer: 0
   m_Name: 2D_Player
   m_TagString: MainCamera
@@ -106,21 +106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
---- !u!114 &114000010922607134
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010815895138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed1dec64897d7ca4680170e12f6f7234, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: {x: 0, y: 0, z: 0}
-  path: []
-  tempNode: {fileID: 1000011609291056, guid: 28198168ce15f6e4fb61f463ace01660, type: 2}
-  pathObject: {fileID: 0}
 --- !u!114 &114000012763124822
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,8 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bae81627c1b7e44a99973df811569e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4000013031143752, guid: 1bf4ce829ac734407909a860fd4e60ab, type: 2}
-  enemy1: {fileID: 4000013031143752, guid: 1bf4ce829ac734407909a860fd4e60ab, type: 2}
+  enemy1: {fileID: 1000013412457412, guid: 1bf4ce829ac734407909a860fd4e60ab, type: 2}
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -142,8 +126,36 @@ MonoBehaviour:
   pathScript: {fileID: 0}
   distance: {x: 0, y: 0, z: 0}
   path: []
+  op: {fileID: 1000010958188176, guid: c1eb2fa92e8eaf2478161da8c6b617c2, type: 2}
+  key: {fileID: 1000010549460492, guid: 737853e9842fc4e0fab2962ad23004e7, type: 2}
   tempNode: {fileID: 1000011609291056, guid: 28198168ce15f6e4fb61f463ace01660, type: 2}
   pathCounter: 0
+  keyCounter: 0
+--- !u!114 &114000013895963534
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010815895138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  observed: {fileID: 0}
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 4000012174342386}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  isRuntimeInstantiated: 0
 --- !u!124 &124000010671456704
 Behaviour:
   m_ObjectHideFlags: 1

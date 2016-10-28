@@ -776,6 +776,18 @@ Prefab:
       propertyPath: spawnSpots.Array.data[3]
       value: 
       objectReference: {fileID: 53233997}
+    - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
+        type: 2}
+      propertyPath: dungeoneerPrefab
+      value: 
+      objectReference: {fileID: 1000011443950066, guid: 6d0ae49efcb259a48b2a02a918b3ce6e,
+        type: 2}
+    - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
+        type: 2}
+      propertyPath: dMPrefab
+      value: 
+      objectReference: {fileID: 1000010815895138, guid: b3c3dd7443854d045a3c6e0509c13696,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 002a7d57181f3e740a076d69224739fd, type: 2}
   m_IsPrefabParent: 0
