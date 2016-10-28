@@ -17,6 +17,7 @@ public class clickDragSpawn : MonoBehaviour {
     public List<GameObject> path = new List<GameObject>();
     public GameObject op;
     public GameObject key;
+    public Camera camera;
 
     public GameObject tempNode;
     public int pathCounter;
@@ -34,6 +35,8 @@ public class clickDragSpawn : MonoBehaviour {
     void Start () {
         pathCounter = 0;
         keyCounter = 0;
+        enemy1 = Resources.Load("Skeleton_FullPrefab") as GameObject;
+        camera = GetComponent<Camera>();
 	}
 	void  Update() {
 
@@ -96,11 +99,13 @@ public class clickDragSpawn : MonoBehaviour {
         {
             yield return null;
         } while (!Input.GetMouseButtonUp(0));
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        ray = camera.ScreenPointToRay(Input.mousePosition);
+        Debug.Log(Physics.Raycast(ray,out hit));
         if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
         {
             distance = hit.point;
             distance.y = 1;
+            Debug.Log(tempNode.name);
             (PhotonNetwork.Instantiate(tempNode.name, distance, Quaternion.identity,0) as GameObject).transform.parent = path[pathCounter].transform;
         }
         UnityEditor.Selection.activeGameObject = path[pathCounter];
@@ -113,7 +118,7 @@ public class clickDragSpawn : MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(0))
             {
-                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                ray = camera.ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
                 {
                     distance = hit.point;
@@ -144,7 +149,7 @@ public class clickDragSpawn : MonoBehaviour {
             yield return null;
         } while (!Input.GetMouseButtonUp(0));
         if(keyCounter < 4) { 
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        ray = camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
             {
                 distance = hit.point;

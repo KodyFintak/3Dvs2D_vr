@@ -8,7 +8,7 @@ public class Master_Control : MonoBehaviour {
 	Animator animate;
 	Follow follow;
 	PathingFollow pathFollowScript;
-	Draw_Path pathScript;
+	MakingDot pathScript;
 	NavMeshAgent agent;
 	Skel_Control skeleControl;
 	List<Transform> path;
@@ -24,11 +24,13 @@ public class Master_Control : MonoBehaviour {
 		animate = GetComponent<Animator> ();
 		follow = GetComponent<Follow> ();
 		pathFollowScript = GetComponent<PathingFollow> ();
-		pathScript = GameObject.Find ("ForestPath").GetComponent<Draw_Path>();
+        string tempName = this.name.Substring(this.name.Length - 1);
+        pathScript = GameObject.Find("Path" + tempName).GetComponent<MakingDot>();
 		agent = GetComponent<NavMeshAgent> ();
 		skeleControl = GetComponent<Skel_Control> ();
-		playerLocation = GameObject.Find ("FirstPersonCharacter").transform;
-		playerScript = GameObject.Find ("Player").GetComponent<Player>();
+        //playerLocation = GameObject.Find ("FirstPersonCharacter").transform;
+        playerLocation = GameObject.Find("2D_Player(Clone)").transform;
+        playerScript = GameObject.Find ("Player").GetComponent<Player>();
 		combatScript = GetComponent<Combat> ();
 
 	}
