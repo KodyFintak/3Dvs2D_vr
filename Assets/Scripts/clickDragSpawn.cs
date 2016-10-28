@@ -9,7 +9,7 @@ public class clickDragSpawn : MonoBehaviour {
 
 	public GameObject enemy1;
 	public Transform[] spawnPoints;
-    public getValue pathScript;
+    //public getValue pathScript;
 
     public RaycastHit hit;
     public Ray ray;
@@ -64,19 +64,19 @@ public class clickDragSpawn : MonoBehaviour {
 
 
 		if (e.type == EventType.MouseDown && rect1.Contains (e.mousePosition)) {
-			Instantiate(enemy1, spawnPoints[0].position, spawnPoints[0].rotation);
+			PhotonNetwork.Instantiate(enemy1.name, spawnPoints[0].position, spawnPoints[0].rotation,0);
 		}
 
 		if (e.type == EventType.MouseDown && rect2.Contains (e.mousePosition)) {
-			Instantiate(enemy1, spawnPoints[1].position, spawnPoints[1].rotation);
+			PhotonNetwork.Instantiate(enemy1.name, spawnPoints[1].position, spawnPoints[1].rotation,0);
 		}
 
 		if (e.type == EventType.MouseDown && rect3.Contains (e.mousePosition)) {
-			Instantiate(enemy1, spawnPoints[2].position, spawnPoints[2].rotation);
+			PhotonNetwork.Instantiate(enemy1.name, spawnPoints[2].position, spawnPoints[2].rotation,0);
 		}
 
 		if (e.type == EventType.MouseDown && rect4.Contains (e.mousePosition)) {
-			Instantiate(enemy1, spawnPoints[3].position, spawnPoints[3].rotation);
+			PhotonNetwork.Instantiate(enemy1.name, spawnPoints[3].position, spawnPoints[3].rotation,0);
 		}
         if (e.type == EventType.MouseDown && rect5.Contains(e.mousePosition))
         {
@@ -101,7 +101,7 @@ public class clickDragSpawn : MonoBehaviour {
         {
             distance = hit.point;
             distance.y = 1;
-            (Instantiate(tempNode, distance, Quaternion.identity) as GameObject).transform.parent = path[pathCounter].transform;
+            (PhotonNetwork.Instantiate(tempNode.name, distance, Quaternion.identity,0) as GameObject).transform.parent = path[pathCounter].transform;
         }
         UnityEditor.Selection.activeGameObject = path[pathCounter];
         StartCoroutine(ContinuePath());
@@ -118,12 +118,12 @@ public class clickDragSpawn : MonoBehaviour {
                 {
                     distance = hit.point;
                     distance.y = 1;
-                    (Instantiate(tempNode, distance, Quaternion.identity)as GameObject).transform.parent = path[pathCounter].transform;
+                    (PhotonNetwork.Instantiate(tempNode.name, distance, Quaternion.identity,0)as GameObject).transform.parent = path[pathCounter].transform;
                 }
             }
             yield return null;
         }
-        (Instantiate(enemy1, path[pathCounter].transform.GetChild(0).position, Quaternion.identity) as GameObject).gameObject.name = "Skeleton" + pathCounter;
+        (PhotonNetwork.Instantiate(enemy1.name, path[pathCounter].transform.GetChild(0).position, Quaternion.identity,0) as GameObject).gameObject.name = "Skeleton" + pathCounter;
         UnityEditor.Selection.activeGameObject = null;
         rect.position = new Vector2(-200, 0);
         Invoke("coolDown", 3.0f);
@@ -149,7 +149,7 @@ public class clickDragSpawn : MonoBehaviour {
             {
                 distance = hit.point;
                 distance.y = 1;
-                Instantiate(key, distance, Quaternion.identity);
+                PhotonNetwork.Instantiate(key.name, distance, Quaternion.identity,0);
                 keyCounter++;
             }
         }
