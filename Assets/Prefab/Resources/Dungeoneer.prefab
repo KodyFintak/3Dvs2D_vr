@@ -43,6 +43,7 @@ GameObject:
   - 114: {fileID: 114000013112385038}
   - 114: {fileID: 114000013141931094}
   - 114: {fileID: 114000010619963754}
+  - 114: {fileID: 114000013809383140}
   m_Layer: 0
   m_Name: Dungeoneer
   m_TagString: Untagged
@@ -593,6 +594,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa4a89b7956128241b3c047bb78f5f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000013809383140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011443950066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f0804eda8c170498058a19ae9a340e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 7
+  height: 3
+  heightSmoothLag: 0.3
+  centerOffset: {x: 0, y: 0, z: 0}
+  followOnStart: 1
 --- !u!114 &114000014287422366
 MonoBehaviour:
   m_ObjectHideFlags: 1
