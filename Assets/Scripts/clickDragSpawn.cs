@@ -34,7 +34,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
         pathCounter = 0;
         keyCounter = 0;
         enemy1 = Resources.Load("Skeleton_FullPrefab") as GameObject;
-        camera = GetComponent<Camera>();
+        camera = Camera.main;
 	}
 	void Update() {
         if (photonView.isMine)

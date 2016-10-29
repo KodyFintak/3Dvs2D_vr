@@ -48,12 +48,13 @@ public class GameManager : Photon.PunBehaviour {
             if (Player.LocalPlayerInstance == null)
             {
                 Debug.Log("We are Instantiating LocalPlayer from " + Application.loadedLevelName);
-            //    if (PhotonNetwork.player.isMasterClient)
-            //    {
-            //        PhotonNetwork.Instantiate(this.dMPrefab.name, new Vector3(77,100,0), Quaternion.Euler(90f,0f,0f), 0);
-             //   }
-            //    else
-            //    {
+                GameObject player;
+                if (PhotonNetwork.player.isMasterClient)
+                {
+                   player = PhotonNetwork.Instantiate(this.dMPrefab.name, new Vector3(77,100,0), Quaternion.Euler(90f,0f,0f), 0);
+                }
+                else
+                {
                     spawnSpots = GameObject.FindObjectsOfType<SpawnSpot>();
                     if (spawnSpots == null)
                     {
@@ -62,17 +63,21 @@ public class GameManager : Photon.PunBehaviour {
                     }
                     SpawnSpot mySpawnSpot = spawnSpots[UnityEngine.Random.Range(0, spawnSpots.Length)];
                     // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-                    GameObject player = PhotonNetwork.Instantiate(this.dungeoneerPrefab.name, mySpawnSpot.transform.position, mySpawnSpot.transform.rotation, 0);
-                    GameObject MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-                    if(MainCamera != null)
+                    player = PhotonNetwork.Instantiate(this.dungeoneerPrefab.name, mySpawnSpot.transform.position, mySpawnSpot.transform.rotation, 0);
+                }
+                GameObject MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+                if (MainCamera != null)
+                {
+                    CameraWork cameraScript = MainCamera.GetComponent<CameraWork>();
+                    if (cameraScript != null)
                     {
-                        CameraWork cameraScript = MainCamera.GetComponent<CameraWork>();
-                        if(cameraScript != null)
+                        if(player.name == "2D_Player(Clone)")
                         {
-                            cameraScript.target = player;
+                            MainCamera.transform.position = new Vector3(MainCamera.transform.position.x, MainCamera.transform.position.y - 0.2f, MainCamera.transform.position.z);
                         }
+                        cameraScript.target = player;
                     }
-              //  }
+                }
                 Playercount += 1;
             }
             else
