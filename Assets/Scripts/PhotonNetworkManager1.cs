@@ -19,17 +19,13 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
     public InputField room_name;
     public GameObject roomPrefab;
     public PhotonLogLevel LogLevel = PhotonLogLevel.Informational;
-    [SerializeField]
-    Text connectionText;
-    [SerializeField]
-    Transform[] spawnPoints;
 
     #endregion
 
     #region Private Variables
 
-    private List<GameObject> roomPrefabs = new List<GameObject>();
-    GameObject player;
+    List<GameObject> roomPrefabs = new List<GameObject>();
+    //GameObject player;
     string _gameVersion = "0.2.0";
 
     #endregion
@@ -47,14 +43,14 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
         {
             Destroy(gameObject);
         }
-        PhotonNetwork.logLevel = LogLevel;
-        PhotonNetwork.autoJoinLobby = false;
-        PhotonNetwork.automaticallySyncScene = true;
     }
 
     void Start()
     {
         Debug.Log(PhotonNetwork.countOfPlayers);
+        PhotonNetwork.logLevel = LogLevel;
+        PhotonNetwork.autoJoinLobby = false;
+        PhotonNetwork.automaticallySyncScene = true;
     }
 
     void RefreshRoomList()
@@ -106,7 +102,7 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
 
         foreach (RoomInfo RI in PhotonNetwork.GetRoomList())
         {
-            if (roomName == RI.name)
+            if (roomName == RI.name && RI.playerCount != RI.maxPlayers)
             {
                 available_room = true;
                 break;
@@ -130,7 +126,7 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
 
     void OnPhotonJoinRoomFailed()
     {
-        Debug.Log("fail: ");
+        Debug.Log("Failed to join room.");
     }
 
     void OnJoinedRoom()

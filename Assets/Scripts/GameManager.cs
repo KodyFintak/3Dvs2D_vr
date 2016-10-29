@@ -52,6 +52,11 @@ public class GameManager : Photon.PunBehaviour {
                 if (PhotonNetwork.player.isMasterClient)
                 {
                    player = PhotonNetwork.Instantiate(this.dMPrefab.name, new Vector3(77,100,0), Quaternion.Euler(90f,0f,0f), 0);
+                    //CameraWork cameraScript = player.GetComponent<CameraWork>();
+                    //if(cameraScript != null)
+                    //{
+                    //    cameraScript.target = player;
+                    //}
                 }
                 else
                 {
@@ -73,9 +78,9 @@ public class GameManager : Photon.PunBehaviour {
                     {
                         if(player.name == "2D_Player(Clone)")
                         {
-                            MainCamera.transform.position = new Vector3(MainCamera.transform.position.x, MainCamera.transform.position.y - 0.2f, MainCamera.transform.position.z);
-                        }
-                        cameraScript.target = player;
+                           MainCamera.transform.position = new Vector3(MainCamera.transform.position.x, MainCamera.transform.position.y - 0.2f, MainCamera.transform.position.z);
+                       }
+                       cameraScript.target = player;
                     }
                 }
                 Playercount += 1;

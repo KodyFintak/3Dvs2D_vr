@@ -109,6 +109,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
             (PhotonNetwork.Instantiate(tempNode.name, distance, Quaternion.identity,0) as GameObject).transform.parent = path[pathCounter].transform;
         }
         UnityEditor.Selection.activeGameObject = path[pathCounter];
+        //gameObject.activeSelf = path[pathCounter];
         StartCoroutine(ContinuePath());
     }
 
