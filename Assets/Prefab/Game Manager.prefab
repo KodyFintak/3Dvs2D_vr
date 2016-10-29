@@ -51,3 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a6feeee6f2fc5f40ac38f397842a378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnSpots: []
+  dMPrefab: {fileID: 1000010815895138, guid: b3c3dd7443854d045a3c6e0509c13696, type: 2}
+  dungeoneerPrefab: {fileID: 1000010581628264, guid: 047610228b8da2d4b9b3d9d83b6a6525,
+    type: 2}
