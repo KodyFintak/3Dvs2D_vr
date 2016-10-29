@@ -5,12 +5,10 @@ using System.Collections.Generic;
 #if UNITY_EDITOR
 using UnityEditor;
 
-public class clickDragSpawn : MonoBehaviour {
+public class clickDragSpawn : Photon.MonoBehaviour {
 
 	public GameObject enemy1;
 	public Transform[] spawnPoints;
-    //public getValue pathScript;
-
     public RaycastHit hit;
     public Ray ray;
     public Vector3 distance;
@@ -38,20 +36,22 @@ public class clickDragSpawn : MonoBehaviour {
         enemy1 = Resources.Load("Skeleton_FullPrefab") as GameObject;
         camera = GetComponent<Camera>();
 	}
-	void  Update() {
-
-        if (Input.GetMouseButton(0) && spawn != null)
+	void Update() {
+        if (photonView.isMine)
         {
-            var pos = Input.mousePosition;
-            pos.z = -Camera.main.transform.position.z;
-            spawn.transform.position = Camera.main.ScreenToWorldPoint(pos);
+            if (Input.GetMouseButton(0) && spawn != null)
+            {
+                var pos = Input.mousePosition;
+                pos.z = -Camera.main.transform.position.z;
+                spawn.transform.position = Camera.main.ScreenToWorldPoint(pos);
+            }
+
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                spawn = null;
+            }
         }
-
-
-        if (Input.GetMouseButtonUp(0)) {
-			spawn = null;
-		}
-
     }
 
 	void OnGUI() {

@@ -11,7 +11,7 @@ public class Combat : MonoBehaviour {
 	IEnumerator SleepForAttack(Transform playerLocation,Player playerScript){
 		yield return new WaitForSecondsRealtime(1f);
 		if (Vector3.Distance (playerLocation.position, this.transform.position) <= 6) {
-			playerScript.AIMelee (1);
+			//playerScript.AIMelee (1);
 		}
 
 //		if (Physics.Raycast (transform.position, playerLocation.transform.position - transform.position,out hit)) {

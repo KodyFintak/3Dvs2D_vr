@@ -48,12 +48,12 @@ public class GameManager : Photon.PunBehaviour {
             if (Player.LocalPlayerInstance == null)
             {
                 Debug.Log("We are Instantiating LocalPlayer from " + Application.loadedLevelName);
-                if (PhotonNetwork.player.isMasterClient)
-                {
-                    PhotonNetwork.Instantiate(this.dMPrefab.name, new Vector3(77,100,0), Quaternion.Euler(90f,0f,0f), 0);
-                }
-                else
-                {
+            //    if (PhotonNetwork.player.isMasterClient)
+            //    {
+            //        PhotonNetwork.Instantiate(this.dMPrefab.name, new Vector3(77,100,0), Quaternion.Euler(90f,0f,0f), 0);
+             //   }
+            //    else
+            //    {
                     spawnSpots = GameObject.FindObjectsOfType<SpawnSpot>();
                     if (spawnSpots == null)
                     {
@@ -62,8 +62,17 @@ public class GameManager : Photon.PunBehaviour {
                     }
                     SpawnSpot mySpawnSpot = spawnSpots[UnityEngine.Random.Range(0, spawnSpots.Length)];
                     // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-                    PhotonNetwork.Instantiate(this.dungeoneerPrefab.name, mySpawnSpot.transform.position, mySpawnSpot.transform.rotation, 0);
-                }
+                    GameObject player = PhotonNetwork.Instantiate(this.dungeoneerPrefab.name, mySpawnSpot.transform.position, mySpawnSpot.transform.rotation, 0);
+                    GameObject MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+                    if(MainCamera != null)
+                    {
+                        CameraWork cameraScript = MainCamera.GetComponent<CameraWork>();
+                        if(cameraScript != null)
+                        {
+                            cameraScript.target = player;
+                        }
+                    }
+              //  }
                 Playercount += 1;
             }
             else

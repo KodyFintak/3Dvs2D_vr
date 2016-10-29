@@ -86,7 +86,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010815895138}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!92 &92000011971334854
 Behaviour:
   m_ObjectHideFlags: 1
@@ -123,11 +123,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  pathScript: {fileID: 0}
   distance: {x: 0, y: 0, z: 0}
   path: []
   op: {fileID: 1000010958188176, guid: c1eb2fa92e8eaf2478161da8c6b617c2, type: 2}
   key: {fileID: 1000010549460492, guid: 737853e9842fc4e0fab2962ad23004e7, type: 2}
+  camera: {fileID: 0}
   tempNode: {fileID: 1000011609291056, guid: 28198168ce15f6e4fb61f463ace01660, type: 2}
   pathCounter: 0
   keyCounter: 0

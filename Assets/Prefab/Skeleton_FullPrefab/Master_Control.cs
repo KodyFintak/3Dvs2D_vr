@@ -30,7 +30,8 @@ public class Master_Control : MonoBehaviour {
 		skeleControl = GetComponent<Skel_Control> ();
         //playerLocation = GameObject.Find ("FirstPersonCharacter").transform;
         playerLocation = GameObject.Find("2D_Player(Clone)").transform;
-        playerScript = GameObject.Find ("Player").GetComponent<Player>();
+        //playerScript = GameObject.Find ("Player").GetComponent<Player>();
+        playerScript = null;
 		combatScript = GetComponent<Combat> ();
 
 	}

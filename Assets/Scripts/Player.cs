@@ -21,7 +21,7 @@ public class Player : Photon.MonoBehaviour, IPunObservable
 
     void Start()
     {
-        CameraWork _cameraWork = this.gameObject.GetComponent<CameraWork>();
+       /* CameraWork _cameraWork = this.gameObject.GetComponent<CameraWork>();
 
 
         if (_cameraWork != null)
@@ -35,7 +35,7 @@ public class Player : Photon.MonoBehaviour, IPunObservable
         {
             Debug.LogError("<Color=Red><a>Missing</a></Color> CameraWork Component on playerPrefab.", this);
         }
-
+        */
     }
 
 
