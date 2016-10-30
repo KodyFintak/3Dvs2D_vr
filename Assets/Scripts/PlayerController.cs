@@ -12,7 +12,6 @@ public class PlayerController : Photon.MonoBehaviour {
 	void Update () {
         if (photonView.isMine)
         {
-            Debug.Log("yo");
             fpsScript.movement();
         }
     }
@@ -21,7 +20,6 @@ public class PlayerController : Photon.MonoBehaviour {
     {
         if (photonView.isMine)
         {
-            Debug.Log("yo");
             fpsScript.FixedUpdateChange();
         }
     }

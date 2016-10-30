@@ -21,21 +21,6 @@ public class Player : Photon.MonoBehaviour, IPunObservable
 
     void Start()
     {
-       /* CameraWork _cameraWork = this.gameObject.GetComponent<CameraWork>();
-
-
-        if (_cameraWork != null)
-        {
-            if (photonView.isMine)
-            {
-                _cameraWork.OnStartFollowing();
-            }
-        }
-        else
-        {
-            Debug.LogError("<Color=Red><a>Missing</a></Color> CameraWork Component on playerPrefab.", this);
-        }
-        */
     }
 
 
@@ -52,7 +37,8 @@ public class Player : Photon.MonoBehaviour, IPunObservable
         {
             ProcessInputs();
         }
-        
+
+        int i = 0;
     }
 
     void Awake()

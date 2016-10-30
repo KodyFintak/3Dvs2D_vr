@@ -52,11 +52,6 @@ public class GameManager : Photon.PunBehaviour {
                 if (PhotonNetwork.player.isMasterClient)
                 {
                    player = PhotonNetwork.Instantiate(this.dMPrefab.name, new Vector3(77,100,0), Quaternion.Euler(90f,0f,0f), 0);
-                    //CameraWork cameraScript = player.GetComponent<CameraWork>();
-                    //if(cameraScript != null)
-                    //{
-                    //    cameraScript.target = player;
-                    //}
                 }
                 else
                 {
@@ -69,6 +64,7 @@ public class GameManager : Photon.PunBehaviour {
                     SpawnSpot mySpawnSpot = spawnSpots[UnityEngine.Random.Range(0, spawnSpots.Length)];
                     // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
                     player = PhotonNetwork.Instantiate(this.dungeoneerPrefab.name, mySpawnSpot.transform.position, mySpawnSpot.transform.rotation, 0);
+                    GUI.enabled = false;
                 }
                 GameObject MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
                 if (MainCamera != null)
@@ -90,7 +86,6 @@ public class GameManager : Photon.PunBehaviour {
                 Debug.Log("Ignoring scene load for " + Application.loadedLevelName);
             }
         }
-
     }
 
     void LoadArena()

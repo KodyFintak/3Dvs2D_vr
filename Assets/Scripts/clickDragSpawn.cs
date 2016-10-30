@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿//#if UNITY_EDITOR
+//using UnityEditor;
+//#endif
+
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-#if UNITY_EDITOR
-using UnityEditor;
+
 
 public class clickDragSpawn : Photon.MonoBehaviour {
 
@@ -55,42 +58,50 @@ public class clickDragSpawn : Photon.MonoBehaviour {
     }
 
 	void OnGUI() {
-		Event e = Event.current;
-        
-        if (e.type == EventType.MouseDown && rect.Contains(e.mousePosition)) {
-            path.Add(Instantiate(op));
-            path[pathCounter].gameObject.name = "Path" + pathCounter;
-            StartCoroutine(StartPath());
-            
-
-		}
-
-
-		if (e.type == EventType.MouseDown && rect1.Contains (e.mousePosition)) {
-			PhotonNetwork.Instantiate(enemy1.name, spawnPoints[0].position, spawnPoints[0].rotation,0);
-		}
-
-		if (e.type == EventType.MouseDown && rect2.Contains (e.mousePosition)) {
-			PhotonNetwork.Instantiate(enemy1.name, spawnPoints[1].position, spawnPoints[1].rotation,0);
-		}
-
-		if (e.type == EventType.MouseDown && rect3.Contains (e.mousePosition)) {
-			PhotonNetwork.Instantiate(enemy1.name, spawnPoints[2].position, spawnPoints[2].rotation,0);
-		}
-
-		if (e.type == EventType.MouseDown && rect4.Contains (e.mousePosition)) {
-			PhotonNetwork.Instantiate(enemy1.name, spawnPoints[3].position, spawnPoints[3].rotation,0);
-		}
-        if (e.type == EventType.MouseDown && rect5.Contains(e.mousePosition))
+        if (photonView.isMine)
         {
-            StartCoroutine(spawnKey());
+            Event e = Event.current;
+
+            if (e.type == EventType.MouseDown && rect.Contains(e.mousePosition))
+            {
+                path.Add(Instantiate(op));
+                path[pathCounter].gameObject.name = "Path" + pathCounter;
+                StartCoroutine(StartPath());
+
+
+            }
+
+
+            if (e.type == EventType.MouseDown && rect1.Contains(e.mousePosition))
+            {
+                PhotonNetwork.Instantiate(enemy1.name, spawnPoints[0].position, spawnPoints[0].rotation, 0);
+            }
+
+            if (e.type == EventType.MouseDown && rect2.Contains(e.mousePosition))
+            {
+                PhotonNetwork.Instantiate(enemy1.name, spawnPoints[1].position, spawnPoints[1].rotation, 0);
+            }
+
+            if (e.type == EventType.MouseDown && rect3.Contains(e.mousePosition))
+            {
+                PhotonNetwork.Instantiate(enemy1.name, spawnPoints[2].position, spawnPoints[2].rotation, 0);
+            }
+
+            if (e.type == EventType.MouseDown && rect4.Contains(e.mousePosition))
+            {
+                PhotonNetwork.Instantiate(enemy1.name, spawnPoints[3].position, spawnPoints[3].rotation, 0);
+            }
+            if (e.type == EventType.MouseDown && rect5.Contains(e.mousePosition))
+            {
+                StartCoroutine(spawnKey());
+            }
+            GUI.Button(rect, "Spawn");
+            GUI.Button(rect1, "Spot 1");
+            GUI.Button(rect2, "Spot 2");
+            GUI.Button(rect3, "Spot 3");
+            GUI.Button(rect4, "Spot 4");
+            GUI.Button(rect5, (4 - keyCounter) + " Keys Remaining");
         }
-        GUI.Button (rect, "Spawn");
-		GUI.Button (rect1, "Spot 1");
-		GUI.Button (rect2, "Spot 2");
-		GUI.Button (rect3, "Spot 3");
-		GUI.Button (rect4, "Spot 4");
-        GUI.Button(rect5, (4 - keyCounter) + " Keys Remaining");
 	}
 
     IEnumerator StartPath()
@@ -108,8 +119,8 @@ public class clickDragSpawn : Photon.MonoBehaviour {
             Debug.Log(tempNode.name);
             (PhotonNetwork.Instantiate(tempNode.name, distance, Quaternion.identity,0) as GameObject).transform.parent = path[pathCounter].transform;
         }
-        UnityEditor.Selection.activeGameObject = path[pathCounter];
-        //gameObject.activeSelf = path[pathCounter];
+        //UnityEditor.Selection.activeGameObject = path[pathCounter];
+        path[pathCounter].gameObject.SetActive(true); 
         StartCoroutine(ContinuePath());
     }
 
@@ -130,7 +141,8 @@ public class clickDragSpawn : Photon.MonoBehaviour {
             yield return null;
         }
         (PhotonNetwork.Instantiate(enemy1.name, path[pathCounter].transform.GetChild(0).position, Quaternion.identity,0) as GameObject).gameObject.name = "Skeleton" + pathCounter;
-        UnityEditor.Selection.activeGameObject = null;
+        //UnityEditor.Selection.activeGameObject = null;
+        //gameObject.SetActive(false);
         rect.position = new Vector2(-200, 0);
         Invoke("coolDown", 3.0f);
         
@@ -161,5 +173,3 @@ public class clickDragSpawn : Photon.MonoBehaviour {
         }
     }
 }
-
-#endif
