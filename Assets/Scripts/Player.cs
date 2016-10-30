@@ -6,7 +6,7 @@ public class Player : Photon.MonoBehaviour, IPunObservable
 {
 
     [SerializeField]
-    private int health = 24;
+    private int health = 7;
     [SerializeField]
     private int mana = 8;
     [SerializeField]
@@ -14,13 +14,22 @@ public class Player : Photon.MonoBehaviour, IPunObservable
     [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
     public static GameObject LocalPlayerInstance;
     public SpellCast spell;
+	public AudioClip hurt;
+	public CameraWork cameraScript;
     private float fireSpellStart = 0f;
     private float fireSpellCooldown = 2f;
     public MeleeSystem melee;
+	public AudioSource audioSource;
+
+	private Camera playerCamera;
+
     bool IsFiring;
 
     void Start()
     {
+		audioSource = GetComponent<AudioSource> ();
+		playerCamera = Camera.main;	
+		cameraScript = playerCamera.GetComponent<CameraWork> ();
     }
 
 
@@ -64,6 +73,16 @@ public class Player : Photon.MonoBehaviour, IPunObservable
     {
         xp = xp + expPoint;
     }
+
+	public void setHealth(int newHealth){
+		health = newHealth;
+		if (health <= 0) {
+			death ();	
+		} else {
+			audioSource.PlayOneShot(hurt);
+			// hurt screen
+		}
+	}
 
     void OnTriggerEnter(Collider other)
     {
@@ -122,4 +141,10 @@ public class Player : Photon.MonoBehaviour, IPunObservable
             IsFiring = !IsFiring;
         }
     }
+		
+	void death(){
+		PhotonView.Destroy (gameObject);
+		GameManager game = GameObject.Find ("GameManager").GetComponent<GameManager>();
+		game.LeaveRoom ();
+	}
 }

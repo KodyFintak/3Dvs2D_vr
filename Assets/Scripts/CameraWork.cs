@@ -19,11 +19,10 @@ public class CameraWork : MonoBehaviour
 
     // Update is called once per frame
     void LateUpdate()
-    {
-        if (target != null)
-        {
-            transform.position = target.transform.position + offset + HeightPos;
-            transform.rotation = target.transform.rotation;
-        }
+    {	
+		if (target != null) {
+			transform.position = target.transform.position + offset + HeightPos;
+			transform.rotation = target.transform.rotation;
+		}
     }
 }

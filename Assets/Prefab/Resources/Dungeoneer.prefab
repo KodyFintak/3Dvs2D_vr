@@ -79,11 +79,12 @@ GameObject:
   - 114: {fileID: 114000011750870434}
   - 114: {fileID: 114000013897612508}
   - 114: {fileID: 114000013694805616}
-  - 114: {fileID: 114000011605026092}
   - 114: {fileID: 114000014063072252}
   - 114: {fileID: 114000011279537662}
   - 114: {fileID: 114000010153497484}
   - 114: {fileID: 114000010803544866}
+  - 65: {fileID: 65000010185761754}
+  - 81: {fileID: 81000010026289724}
   m_Layer: 8
   m_Name: Dungeoneer
   m_TagString: Dungeoneer
@@ -114,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012649595658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.55999994, z: 1.2799989}
+  m_LocalPosition: {x: 0, y: 0.55999994, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -263,6 +264,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65000010185761754
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012387114720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 6, z: 2}
+  m_Center: {x: 0, y: -1, z: 0}
+--- !u!81 &81000010026289724
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012387114720}
+  m_Enabled: 1
 --- !u!82 &82000011515300300
 AudioSource:
   m_ObjectHideFlags: 1
@@ -445,7 +465,10 @@ MonoBehaviour:
   mana: 8
   xp: 40
   spell: {fileID: 114000010373369582}
+  hurt: {fileID: 8300000, guid: f37407e8fbb264517b4b0a79d9f3762c, type: 3}
+  cameraScript: {fileID: 0}
   melee: {fileID: 114000011580795866}
+  audioSource: {fileID: 0}
 --- !u!114 &114000011580795866
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -458,18 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Distance: 0
---- !u!114 &114000011605026092
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012387114720}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f0804eda8c170498058a19ae9a340e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  spells: {fileID: 0}
 --- !u!114 &114000011750870434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -575,6 +587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Distance: 5
+  spells: {fileID: 1000012649595658}
 --- !u!114 &114000013897612508
 MonoBehaviour:
   m_ObjectHideFlags: 1

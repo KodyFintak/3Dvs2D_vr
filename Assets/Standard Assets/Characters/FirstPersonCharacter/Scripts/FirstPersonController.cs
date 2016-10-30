@@ -161,7 +161,7 @@ public class FirstPersonController : MonoBehaviour
 
             m_NextStep = m_StepCycle + m_StepInterval;
 
-            PlayFootStepAudio();
+            //PlayFootStepAudio();
         }
 
 

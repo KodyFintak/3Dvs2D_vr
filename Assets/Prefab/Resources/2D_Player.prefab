@@ -116,7 +116,6 @@ MonoBehaviour:
   path: []
   op: {fileID: 1000010958188176, guid: c1eb2fa92e8eaf2478161da8c6b617c2, type: 2}
   key: {fileID: 1000010549460492, guid: 737853e9842fc4e0fab2962ad23004e7, type: 2}
-  camera: {fileID: 0}
   tempNode: {fileID: 1000011609291056, guid: 28198168ce15f6e4fb61f463ace01660, type: 2}
   pathCounter: 0
   keyCounter: 0

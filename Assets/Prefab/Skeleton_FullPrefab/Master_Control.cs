@@ -8,7 +8,7 @@ public class Master_Control : MonoBehaviour {
     Collider[] hitColliders;
     private float checkRate;
     private float nextCheck;
-    private float detectionRadius = 10;
+    private float detectionRadius = 25;
 
 
 	Transform myTransform;
@@ -83,9 +83,14 @@ public class Master_Control : MonoBehaviour {
 		health = health - damage;
 	}
 
+	public void setHealth(int newHealth){
+		health = newHealth;
+	}
+
 	void OnCollisionEnter(Collision col){
 		health = health - 2;
 	}
+	
 
 //	IEnumerator SleepForDam(){
 //		yield return new WaitForSecondsRealtime(0.5f);
@@ -102,7 +107,7 @@ public class Master_Control : MonoBehaviour {
 	}
 
 	IEnumerator SleepForDeath(){
-		playerScript.addExp (1);
+		//playerScript.addExp (1);
 		// get rid of box collider soon please
 		yield return new WaitForSecondsRealtime(4f);
 		agent.enabled = false;
@@ -129,6 +134,9 @@ public class Master_Control : MonoBehaviour {
         combatScript = GetComponent<Combat>();
     }
 
+	public int returnHealth(){
+		return health;
+	}
     void CheckIfPlayerInRange()
     {
         if (Time.time > nextCheck && agent == true)
