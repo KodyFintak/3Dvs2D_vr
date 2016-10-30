@@ -44,4 +44,5 @@ MonoBehaviour:
   - RequestForPickupTimes
   - Marco
   - Polo
+  - TakeDamage
   DisableAutoOpenWizard: 1

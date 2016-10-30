@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 413525860}
-  m_IndirectSpecularColor: {r: 0.44692558, g: 0.49678743, b: 0.57508624, a: 1}
+  m_IndirectSpecularColor: {r: 0.44692492, g: 0.4967869, b: 0.57508546, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -26747,7 +26747,7 @@ Prefab:
         type: 2}
       propertyPath: dungeoneerPrefab
       value: 
-      objectReference: {fileID: 1000010581628264, guid: 047610228b8da2d4b9b3d9d83b6a6525,
+      objectReference: {fileID: 1000012387114720, guid: c6b7aee4d8c864f4c94e9d77de404803,
         type: 2}
     - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
         type: 2}

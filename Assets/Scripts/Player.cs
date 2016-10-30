@@ -86,6 +86,7 @@ public class Player : Photon.MonoBehaviour, IPunObservable
         if (Input.GetButtonDown("Fire1"))
         {
             IsFiring = true;
+            melee.swing();
         }
 
         if (Input.GetKeyDown(KeyCode.Q))
