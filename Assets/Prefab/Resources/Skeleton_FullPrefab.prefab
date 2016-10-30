@@ -484,7 +484,7 @@ GameObject:
   - 114: {fileID: 114000011646276652}
   - 114: {fileID: 114000011374622808}
   - 114: {fileID: 114000010481804982}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Skeleton_FullPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

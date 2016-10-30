@@ -30,7 +30,7 @@ GameObject:
   - 114: {fileID: 114000011204747760}
   - 114: {fileID: 114000012253337812}
   - 114: {fileID: 114000012715742226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dungeoneer
   m_TagString: Untagged
   m_Icon: {fileID: 0}

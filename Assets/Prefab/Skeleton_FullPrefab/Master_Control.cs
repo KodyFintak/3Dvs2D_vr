@@ -4,7 +4,15 @@ using System.Collections.Generic;
 
 public class Master_Control : MonoBehaviour {
 
-	Transform playerLocation;
+    private LayerMask detectionLayer;
+    Collider[] hitColliders;
+    private float checkRate;
+    private float nextCheck;
+    private float detectionRadius = 10;
+
+
+	Transform myTransform;
+    Vector3 playerLocation;
 	Animator animate;
 	Follow follow;
 	PathingFollow pathFollowScript;
@@ -15,24 +23,14 @@ public class Master_Control : MonoBehaviour {
 	bool doneAttacking = false;
 	bool firstTime = true;
 	bool doItOnce = true;
+    bool playerFound = false;
 	int health = 3;
 	Combat combatScript;
 	Player playerScript;
 
 	// Use this for initialization
 	void Start () {
-		animate = GetComponent<Animator> ();
-		follow = GetComponent<Follow> ();
-		pathFollowScript = GetComponent<PathingFollow> ();
-        string tempName = this.name.Substring(this.name.Length - 1);
-        pathScript = GameObject.Find("Path" + tempName).GetComponent<MakingDot>();
-		agent = GetComponent<NavMeshAgent> ();
-		skeleControl = GetComponent<Skel_Control> ();
-        //playerLocation = GameObject.Find ("FirstPersonCharacter").transform;
-        playerLocation = GameObject.Find("2D_Player(Clone)").transform;
-        //playerScript = GameObject.Find ("Player").GetComponent<Player>();
-        playerScript = null;
-		combatScript = GetComponent<Combat> ();
+        SetInitialReferences();
 
 	}
 
@@ -49,7 +47,9 @@ public class Master_Control : MonoBehaviour {
 			StartCoroutine (SleepForDeath ());
 		} 
 		else {
-			if (Vector3.Distance (playerLocation.position, this.transform.position) < 25 || animate.GetCurrentAnimatorStateInfo (0).IsName ("Attack")) {
+            CheckIfPlayerInRange();
+
+			if (playerFound == true && (Vector3.Distance (playerLocation, this.transform.position) < 25 || animate.GetCurrentAnimatorStateInfo (0).IsName ("Attack"))) {
 				if (firstTime) {
 					skeleControl.setRun (animate);
 					firstTime = false;
@@ -106,6 +106,47 @@ public class Master_Control : MonoBehaviour {
 		// get rid of box collider soon please
 		yield return new WaitForSecondsRealtime(4f);
 		agent.enabled = false;
-		Destroy (gameObject);
+		PhotonNetwork.Destroy (gameObject);
 	}
+
+    void SetInitialReferences()
+    {
+        checkRate = Random.Range(0.8f, 1.2f);
+        myTransform = transform;
+        detectionLayer = 1 << 8;
+
+        animate = GetComponent<Animator>();
+        follow = GetComponent<Follow>();
+        pathFollowScript = GetComponent<PathingFollow>();
+        string tempName = this.name.Substring(this.name.Length - 1);
+        pathScript = GameObject.Find("Path" + tempName).GetComponent<MakingDot>();
+        agent = GetComponent<NavMeshAgent>();
+        skeleControl = GetComponent<Skel_Control>();
+        //playerLocation = GameObject.Find ("FirstPersonCharacter").transform;
+        //playerLocation = GameObject.Find("2D_Player(Clone)").transform;
+        //playerScript = GameObject.Find ("Player").GetComponent<Player>();
+        playerScript = null;
+        combatScript = GetComponent<Combat>();
+    }
+
+    void CheckIfPlayerInRange()
+    {
+        if (Time.time > nextCheck && agent == true)
+        {
+            nextCheck = Time.time + checkRate;
+
+            hitColliders = Physics.OverlapSphere(myTransform.position, detectionRadius, detectionLayer);
+
+            if (hitColliders.Length > 0)
+            {
+                agent.SetDestination(hitColliders[0].transform.position);
+                playerLocation = hitColliders[0].transform.position;
+                playerFound = true;
+            }
+            else
+            {
+                playerFound = false;
+            }
+        }
+    }
 }

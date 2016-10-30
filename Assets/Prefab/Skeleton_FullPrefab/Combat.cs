@@ -4,13 +4,13 @@ using System.Collections;
 public class Combat : MonoBehaviour {
 	public float distance;
 
-	public void Hit(Transform playerLocation,Player playerScript){
+	public void Hit(Vector3 playerLocation,Player playerScript){
 		StartCoroutine (SleepForAttack (playerLocation,playerScript));
 	}
 		
-	IEnumerator SleepForAttack(Transform playerLocation,Player playerScript){
+	IEnumerator SleepForAttack(Vector3 playerLocation,Player playerScript){
 		yield return new WaitForSecondsRealtime(1f);
-		if (Vector3.Distance (playerLocation.position, this.transform.position) <= 6) {
+		if (Vector3.Distance (playerLocation, this.transform.position) <= 6) {
 			//playerScript.AIMelee (1);
 		}
 

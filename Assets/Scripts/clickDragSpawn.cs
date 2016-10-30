@@ -1,8 +1,4 @@
-﻿//#if UNITY_EDITOR
-//using UnityEditor;
-//#endif
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -18,19 +14,19 @@ public class clickDragSpawn : Photon.MonoBehaviour {
     public List<GameObject> path = new List<GameObject>();
     public GameObject op;
     public GameObject key;
-    public Camera camera;
 
     public GameObject tempNode;
     public int pathCounter;
     public int keyCounter;
 
-    private Transform spawn;
-	private Rect rect = new Rect(0, 0, 125, 50);
-	private Rect rect1 = new Rect(0, 50, 125, 50);
-	private Rect rect2 = new Rect(0, 100, 125, 50);
-	private Rect rect3 = new Rect(0, 150, 125, 50);
-	private Rect rect4 = new Rect(0, 200, 125, 50);
-    private Rect rect5 = new Rect(0, 250, 125, 50);
+    Transform spawn;
+	Rect rect = new Rect(0, 0, 125, 50);
+	Rect rect1 = new Rect(0, 50, 125, 50);
+	Rect rect2 = new Rect(0, 100, 125, 50);
+	Rect rect3 = new Rect(0, 150, 125, 50);
+	Rect rect4 = new Rect(0, 200, 125, 50);
+    Rect rect5 = new Rect(0, 250, 125, 50);
+    Camera camera;
 
     // Use this for initialization
     void Start () {
@@ -67,8 +63,6 @@ public class clickDragSpawn : Photon.MonoBehaviour {
                 path.Add(Instantiate(op));
                 path[pathCounter].gameObject.name = "Path" + pathCounter;
                 StartCoroutine(StartPath());
-
-
             }
 
 
@@ -110,7 +104,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
         {
             yield return null;
         } while (!Input.GetMouseButtonUp(0));
-        ray = camera.ScreenPointToRay(Input.mousePosition);
+        ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
         Debug.Log(Physics.Raycast(ray,out hit));
         if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
         {
@@ -130,7 +124,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(0))
             {
-                ray = camera.ScreenPointToRay(Input.mousePosition);
+                ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
                 if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
                 {
                     distance = hit.point;
@@ -144,8 +138,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
         //UnityEditor.Selection.activeGameObject = null;
         //gameObject.SetActive(false);
         rect.position = new Vector2(-200, 0);
-        Invoke("coolDown", 3.0f);
-        
+        Invoke("coolDown", 3.0f);        
         
         pathCounter++;
     }
@@ -162,7 +155,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
             yield return null;
         } while (!Input.GetMouseButtonUp(0));
         if(keyCounter < 4) { 
-        ray = camera.ScreenPointToRay(Input.mousePosition);
+        ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
             {
                 distance = hit.point;

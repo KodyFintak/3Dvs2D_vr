@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class getValue : MonoBehaviour {
+public class getValue : MonoBehaviour
+{
 
     public RaycastHit hit;
     public Ray ray;
@@ -15,11 +16,6 @@ public class getValue : MonoBehaviour {
     {
         pathObject = GameObject.Find("Path");
     }
-
-	// Update is called once per frame
-	void Update () {
-        
-	}
     void MakePath()
     {
         if (Input.GetMouseButtonDown(0))
@@ -35,5 +31,4 @@ public class getValue : MonoBehaviour {
             }
         }
     }
-
-    }
+}
