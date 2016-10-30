@@ -13,9 +13,9 @@ public class ExplodeonContact : MonoBehaviour {
             //hit.collider.SendMessage("MeleeDamage", Damage, SendMessageOptions.DontRequireReceiver);
         }
         SendMessage ("TakeMagicDamage", 2, SendMessageOptions.DontRequireReceiver);
-		GameObject expl = Instantiate(explosion, transform.position, Quaternion.identity) as GameObject;
-		Destroy(gameObject); 
-		Destroy(expl, 2); 
+		GameObject expl = PhotonNetwork.Instantiate("ErekiBall2", transform.position, Quaternion.identity,0) as GameObject;
+		PhotonNetwork.Destroy (gameObject); 
+		PhotonNetwork.Destroy (expl); 
 	}
 
 }

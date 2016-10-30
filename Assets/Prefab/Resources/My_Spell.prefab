@@ -22,6 +22,7 @@ GameObject:
   - 54: {fileID: 54000013846513910}
   - 65: {fileID: 65000010331918962}
   - 114: {fileID: 114000011224179960}
+  - 114: {fileID: 114000012661222978}
   m_Layer: 0
   m_Name: My_Spell
   m_TagString: Magic
@@ -208,6 +209,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 100004, guid: a89abc0d2591545288f4c041059ae633, type: 2}
+--- !u!114 &114000012661222978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011210753154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  observed: {fileID: 0}
+  synchronization: 3
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  ownershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 4000011863794232}
+  ObservedComponentsFoldoutOpen: 1
+  viewIdField: 0
+  instantiationId: -1
+  isRuntimeInstantiated: 0
 --- !u!114 &114000013052776452
 MonoBehaviour:
   m_ObjectHideFlags: 1
