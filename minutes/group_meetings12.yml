@@ -1,0 +1,16 @@
+date: October 24, 2016
+meeting_type: group
+attendance: [allenng, bennysiu]
+absent: [kodyfint, mjluck]
+excused_abscences: [
+{ubit: kodyfint, reason: Upcoming Exams}
+{ubit: mjluck, reason: Abducted by Aliens}
+]
+task_progress: [
+  {ubit: allenng, progress: Working on 2D UI Tasks, Camera movement and world posistion tracking}
+  {ubit: kodyfint, progress: Researching Multiplayer}
+  {ubit: bennysiu, progress: Working on 2D UI Tasks, Camera movement and world posistion tracking}
+  {ubit: mjluck, progress: Reaserching Multiplayer}
+  ]
+issues: []
+Notes: 

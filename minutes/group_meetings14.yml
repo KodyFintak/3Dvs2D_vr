@@ -1,0 +1,14 @@
+date: October 25, 2016
+meeting_type: group
+attendance: [kodyfint, bennysiu, mjluck]
+absent: [allenng]
+excused_abscences: [
+{ubit: allenng, reason: Was Asleep}
+]
+task_progress: [
+  {ubit: kodyfint, progress: Talked about what to work on}
+  {ubit: bennysiu, progress: Talked about what to work on}
+  {ubit: mjluck, progress: Talked about what to work on}
+  ]
+issues: []
+Notes: 

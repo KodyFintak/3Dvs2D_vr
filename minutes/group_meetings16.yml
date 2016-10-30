@@ -1,0 +1,13 @@
+date: October 27, 2016
+meeting_type: group
+attendance: [allenng, bennysiu, kodyfint]
+absent: [mjluck] 
+excused_abscences: [ubit: mjluck, reason: Easier for him to work from dekstop]
+task_progress: [
+  {ubit: allenng, progress: Working on key spawning, cool downs}
+  {ubit: kodyfint, progress: Working on Game Over Screen}
+  {ubit: bennysiu, progress: Working on pathing, cool downs}
+  {ubit: mjluck, progress: Working on multiplayer}
+  ]
+issues: []
+Notes: 

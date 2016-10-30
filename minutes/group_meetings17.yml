@@ -1,0 +1,13 @@
+date: October 30, 2016
+meeting_type: group
+attendance: [allenng, bennysiu, kodyfint, mjluck]
+absent: [] 
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Play testing the game}
+  {ubit: kodyfint, progress: Worked on Camera Shake, Death Screen, fixing magic and melee}
+  {ubit: bennysiu, progress: Worked on fixing magic}
+  {ubit: mjluck, progress: Macheu (Matt) did everything to save the day!}
+  ]
+issues: []
+Notes: Sadly, we found out that Gizmos do not work on built Builds. 

@@ -1,0 +1,13 @@
+date: October 19, 2016
+meeting_type: TA
+attendance: [allenng, kodyfint, bennysiu, mjluck]
+absent: []
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Took a break in preperations for exams}
+  {ubit: kodyfint, progress: Took a break in preperations for exams}
+  {ubit: bennysiu, progress: Took a break in preperations for exams}
+  {ubit: mjluck, progress: Took a break in preperations for exams}
+  ]
+issues: []
+Notes: Work on getting Multiplaye working, and getting the 2D UI Camera and path drawing.
