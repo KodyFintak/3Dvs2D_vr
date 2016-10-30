@@ -6,13 +6,13 @@ using System.Collections.Generic;
 
 public class PhotonNetworkManager : MonoBehaviour {
 
+	//public Camera standbyCamera;
 	public static PhotonNetworkManager instance = null;
+	SpawnSpot[] spawnSpots;
 
 	public InputField room_name;
 	//public InputField max_players;
-
 	public GameObject roomPrefab;
-
 	private List<GameObject> roomPrefabs = new List<GameObject>();
 
 	void Awake()
@@ -27,7 +27,8 @@ public class PhotonNetworkManager : MonoBehaviour {
 
 	void Start()
 	{
-		PhotonNetwork.ConnectUsingSettings ("0.1.0");
+		spawnSpots = GameObject.FindObjectsOfType<SpawnSpot> ();
+		PhotonNetwork.ConnectUsingSettings ("0.2.0");
 	}
 
 
@@ -36,7 +37,7 @@ public class PhotonNetworkManager : MonoBehaviour {
 		switch (EVENT) {
 		case "CreateRoom":
 			if (PhotonNetwork.JoinLobby ()) {
-				
+
 				RoomOptions RO = new RoomOptions ();
 				RO.MaxPlayers = 4;
 				//RO.MaxPlayers = byte.Parse (max_players.text);
@@ -121,23 +122,44 @@ public class PhotonNetworkManager : MonoBehaviour {
 
 	void OnJoinedLobby()
 	{
-		Debug.Log ("Lobi");
+		Debug.Log ("fail");
 		Invoke("RefreshRoomList", 0.1f);
 	}
 
 	void OnPhotonJoinRoomFailed()
 	{
-		Debug.Log ("Odaya giris yapilmadi: ");
+		Debug.Log ("fail: ");
 	}
 
 	void OnJoinedRoom()
 	{
+
 		Debug.Log ("Room joined");
-		SceneManager.LoadScene (1);
+
+		if (spawnSpots == null) {
+			Debug.LogError ("Nope.");
+			return;
+		}
+		SpawnSpot mySpawnSpot = spawnSpots [Random.Range (0, spawnSpots.Length)];
+
+		//standbyCamera.enabled = false;
+
+		GameObject player = PhotonNetwork.Instantiate ("Dungeoneer", mySpawnSpot.transform.position, mySpawnSpot.transform.rotation, 0);
+		//GameObject player = PhotonNetwork.Instantiate("Dungeoneer", Vector3.zero, Quaternion.identity, 0);
+
+		//player.transform.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().enabled = true;
+		player.transform.GetComponent<CharacterController>().enabled = true;
+		player.transform.FindChild ("FirstPersonCharacter").gameObject.SetActive (true);
 	}
 
 	void OnCreatedRoom()
 	{
 		Debug.Log ("Room created.");
 	}
+
+    //void OnPhotonPlayerConnected(PhotonPlayer newplayer)
+    //{
+    //    if (instantiatedAvatars == false PhotonNetwork.countOfPlayers == 2)
+    //        {
+    //}
 }

@@ -7,10 +7,10 @@ public class Follow : MonoBehaviour {
 	bool hitting = true;
 
 	// Function to chase player if in range 
-	public void FollowThem (Animator animate, NavMeshAgent agent, Transform playerLocation, Skel_Control skeleControl,Combat combatScript,Player playerScript) {
-		Vector3 direction = playerLocation.position - this.transform.position;
+	public void FollowThem (Animator animate, NavMeshAgent agent, Vector3 playerLocation, Skel_Control skeleControl, Combat combatScript,Player playerScript) {
+		Vector3 direction = playerLocation - this.transform.position;
 		bool isCurrentAttack = animate.GetCurrentAnimatorStateInfo (0).IsName ("Attack");
-		if (Vector3.Distance (playerLocation.position, this.transform.position) < 25){
+		if (Vector3.Distance (playerLocation, this.transform.position) < 25){
 			direction.y = 0;
 			if (!isCurrentAttack) { 
 				this.transform.rotation = (Quaternion.Slerp (this.transform.rotation, Quaternion.LookRotation (direction), 0.1f));
@@ -19,7 +19,7 @@ public class Follow : MonoBehaviour {
 			if (direction.magnitude > 5) {
 				if (!isCurrentAttack) { 
 					agent.Resume ();
-					agent.SetDestination (playerLocation.transform.position);
+					agent.SetDestination (playerLocation);
 					agent.speed = 7;
 					agent.acceleration = 8;
 				}
