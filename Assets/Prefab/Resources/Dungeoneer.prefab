@@ -286,7 +286,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012387114720}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!82 &82000011515300300
 AudioSource:
   m_ObjectHideFlags: 1
@@ -431,7 +431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 4000010417527498}
-  spell: {fileID: 1000011210753154, guid: 787e507cca5fe924ea805b6f2aa06a42, type: 2}
   spellspeed: 1000
 --- !u!114 &114000010803544866
 MonoBehaviour:
