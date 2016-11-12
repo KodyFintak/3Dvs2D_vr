@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011844134258}
   - 114: {fileID: 114000013603255062}
+  - 122: {fileID: 122000012690351342}
   m_Layer: 0
   m_Name: Node
   m_TagString: Untagged
@@ -65,3 +66,14 @@ MonoBehaviour:
   viewIdField: 0
   instantiationId: -1
   isRuntimeInstantiated: 0
+--- !u!122 &122000012690351342
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011609291056}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4290969855
+  m_Size: 1

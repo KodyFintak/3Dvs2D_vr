@@ -16,7 +16,7 @@ public class Master_Control : MonoBehaviour {
 	Animator animate;
 	Follow follow;
 	PathingFollow pathFollowScript;
-	MakingDot pathScript;
+	clickDragSpawn pathScript;
 	NavMeshAgent agent;
 	Skel_Control skeleControl;
 	List<Transform> path;
@@ -71,7 +71,8 @@ public class Master_Control : MonoBehaviour {
 						}
 					} else {
 						if (!animate.GetBool ("isIdle")) {
-							pathFollowScript.Patrol (pathScript.actualPath, agent, animate, skeleControl);
+							Debug.Log (pathScript.actualPath[0]);
+							pathFollowScript.Patrol (pathScript.actualPath[0], agent, animate, skeleControl);
 						}
 					}
 				}
@@ -124,7 +125,7 @@ public class Master_Control : MonoBehaviour {
         follow = GetComponent<Follow>();
         pathFollowScript = GetComponent<PathingFollow>();
         string tempName = this.name.Substring(this.name.Length - 1);
-        pathScript = GameObject.Find("Path" + tempName).GetComponent<MakingDot>();
+		pathScript = GameObject.Find("2D_Player(Clone)").GetComponent<clickDragSpawn>();
         agent = GetComponent<NavMeshAgent>();
         skeleControl = GetComponent<Skel_Control>();
         //playerLocation = GameObject.Find ("FirstPersonCharacter").transform;

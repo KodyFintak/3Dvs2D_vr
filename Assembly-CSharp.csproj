@@ -176,6 +176,7 @@
      <Compile Include="Assets\Prefab\2D_Player\MakingDot.cs" />
      <Compile Include="Assets\Prefab\2D_Player\MovingFor2D.cs" />
      <Compile Include="Assets\Prefab\2D_Player\getValue.cs" />
+     <Compile Include="Assets\Prefab\2D_Player\storeVarForLine.cs" />
      <Compile Include="Assets\Prefab\Player\ExplodeonContact.cs" />
      <Compile Include="Assets\Prefab\Player\MeleeSystem.cs" />
      <Compile Include="Assets\Prefab\Player\SpellCast.cs" />
