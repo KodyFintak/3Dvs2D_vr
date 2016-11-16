@@ -98,7 +98,7 @@ public class GameManager : Photon.PunBehaviour {
         else
         {
             Debug.Log("PhotonNetwork : Loading Level : 1");
-            PhotonNetwork.LoadLevel("Level1");
+            //PhotonNetwork.LoadLevel("Level1");
         }
     }
     #endregion

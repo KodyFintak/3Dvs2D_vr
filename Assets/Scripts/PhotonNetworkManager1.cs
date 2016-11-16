@@ -8,6 +8,21 @@ using System.Collections.Generic;
 public class PhotonNetworkManager1 : Photon.PunBehaviour
 {
 
+    [System.Serializable]
+    public class Level
+    {
+        public string LevelNumber;
+        public int Unlocked;
+        public bool IsInteractable;
+        public Sprite LevelThumb;
+        public Text LevelDesc;
+
+        public Button.ButtonClickedEvent OnClickEvent;
+    }
+
+    public List<Level> LevelList;
+    public GameObject LevelButton;
+    public Transform Spacer;
     #region Global Variables
 
     public static PhotonNetworkManager1 instance = null;
@@ -27,10 +42,26 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
     List<GameObject> roomPrefabs = new List<GameObject>();
     //GameObject player;
     string _gameVersion = "0.2.0";
+    string level_to_load = "Level1";
 
     #endregion
 
     #region Photon.PunBehaviour Callbacks
+
+    void FillList()
+    {
+        foreach (var level in LevelList)
+        {
+            GameObject newbutton = Instantiate(LevelButton) as GameObject;
+            NewLevelButton button = newbutton.GetComponent<NewLevelButton>();
+            button.LevelNumber.text = level.LevelNumber;
+            button.levelThumb.sprite = level.LevelThumb;
+            newbutton.transform.SetParent(Spacer);
+
+            button.GetComponent<Button>().onClick.AddListener(() => level_to_load = button.LevelNumber.text);
+
+        }
+    }
 
     void Awake()
     {
@@ -51,6 +82,7 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
         PhotonNetwork.logLevel = LogLevel;
         PhotonNetwork.autoJoinLobby = false;
         PhotonNetwork.automaticallySyncScene = true;
+        FillList();
     }
 
     void RefreshRoomList()
@@ -135,7 +167,7 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
         Debug.Log("Room joined");
         if (PhotonNetwork.room.playerCount == 1)
         {
-            PhotonNetwork.LoadLevel("Level1");
+            PhotonNetwork.LoadLevel(level_to_load);
         }
     }
 

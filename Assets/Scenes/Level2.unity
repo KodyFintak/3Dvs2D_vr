@@ -780,13 +780,19 @@ Prefab:
         type: 2}
       propertyPath: dungeoneerPrefab
       value: 
-      objectReference: {fileID: 1000011443950066, guid: 6d0ae49efcb259a48b2a02a918b3ce6e,
+      objectReference: {fileID: 1000012387114720, guid: c6b7aee4d8c864f4c94e9d77de404803,
         type: 2}
     - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
         type: 2}
       propertyPath: dMPrefab
       value: 
-      objectReference: {fileID: 1000010815895138, guid: b3c3dd7443854d045a3c6e0509c13696,
+      objectReference: {fileID: 1000012185057668, guid: 369c49e26408511418ebc12d5e3e77ea,
+        type: 2}
+    - target: {fileID: 114000013122633510, guid: 002a7d57181f3e740a076d69224739fd,
+        type: 2}
+      propertyPath: ui
+      value: 
+      objectReference: {fileID: 1000010747770262, guid: 0e9083c9174d03b4bb087127893ce537,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 002a7d57181f3e740a076d69224739fd, type: 2}
