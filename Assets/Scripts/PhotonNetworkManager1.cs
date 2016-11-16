@@ -83,6 +83,7 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
         PhotonNetwork.autoJoinLobby = false;
         PhotonNetwork.automaticallySyncScene = true;
         FillList();
+        Connect();
     }
 
     void RefreshRoomList()
