@@ -1,0 +1,13 @@
+date: September 21, 2016
+meeting_type: ta
+attendance: [allenng, kodyfint, bennysiu, mjluck]
+absent: []
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Start work on 2D player User Interface, spawn points, buttons}
+  {ubit: kodyfint, progress: Start work on AI Monsters and Mapping}
+  {ubit: bennysiu, progress: Start work on Player Combat, Damage, Melee Combat}
+  {ubit: mjluck, progress: Start work on 2 player networking}
+  ]
+issues: []
+Notes: Get the Multiplayer Network working first, then add all of the game features. Create a level creation thingy, with specific instructions.

@@ -1,0 +1,15 @@
+date: October 9, 2016
+meeting_type: group
+attendance: [allenng, kodyfint, bennysiu, mjluck]
+absent: []
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Got a working 2D UI}
+  {ubit: kodyfint, progress: Got AI and Pathing done. Working on recieving messages from and to AI and Player}
+  {ubit: bennysiu, progress: Got Melee and Magic working, working on recieving messages from and to AI and Player}
+  {ubit: mjluck, progress: Sprint 2 - Created Start Menu, Lobby Menu and background networking, terrain map.}
+  ]
+issues: [
+  {ubit: mjluck, issue: Players can connect to the same server, but once they are connected, everything is client sided.}
+  ]
+Notes: 

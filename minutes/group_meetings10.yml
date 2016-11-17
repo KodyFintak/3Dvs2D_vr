@@ -1,0 +1,13 @@
+date: October 6, 2016
+meeting_type: TA
+attendance: [allenng, kodyfint, bennysiu, mjluck]
+absent: []
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Almost done with the 2D UI, some bugs that stop it from working.}
+  {ubit: kodyfint, progress: Completed AI following the player, not going through walls, spawner for the AI and path drawing, straight lines, wants graphs}
+  {ubit: bennysiu, progress: Got magic working, shitty melee, mana drains and added cooldowns.}
+  {ubit: mjluck, progress: Got a pregame lobby all set up. Options to create rooms and join rooms.}
+  ]
+issues: [ubit: allenng, progress: Button is not showing up when created in the C# script, send screen shots of 2D UI]
+Notes: Maybe, work on the tasks the first 2 weeks, then leave the final week for merging all the things for the upcoming sprints. 

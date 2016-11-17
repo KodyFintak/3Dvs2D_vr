@@ -1,0 +1,13 @@
+date: September 28, 2016
+meeting_type: TA
+attendance: [allenng, kodyfint, bennysiu, mjluck]
+absent: []
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Started working on 2D UI}
+  {ubit: kodyfint, progress: Finished Skeleton AI to the point of Kody's liking}
+  {ubit: bennysiu, progress: Got Magic working to an extent}
+  {ubit: mjluck, progress: Working on Player Spawn Points and Lobby}
+  ]
+issues: []
+Notes: 
