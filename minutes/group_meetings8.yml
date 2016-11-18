@@ -1,0 +1,15 @@
+date: September 26, 2016
+meeting_type: group
+attendance: [allenng, kodyfint, bennysiu]
+absent: [mjluck]
+excused_abscences: [ubit: mjluck, reason: Swept away by the rain]
+task_progress: [
+  {ubit: allenng, progress: Nothing yet}
+  {ubit: kodyfint, progress: Got AI working}
+  {ubit: bennysiu, progress: Tried to do melee}
+  ]
+issues: [
+  {ubit: bennysiu, issue: Bug, simple fix, has to change Private to Public}
+  {ubit: kodyfint, issue: Small bug, trying to get skeleton to stop moving when attacking}
+]
+Notes: Overall, good progression 

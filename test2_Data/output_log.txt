@@ -1,0 +1,1835 @@
+Initialize engine version: 5.4.0f3 (a6d8d714de6f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3050 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.074 seconds
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\System.dll (this message is harmless)
+desktop: 2560x1440 60Hz; virtual: 4480x1440 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Initialize engine version: 5.4.0f3 (a6d8d714de6f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3050 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.068 seconds
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\System.dll (this message is harmless)
+desktop: 2560x1440 60Hz; virtual: 4480x1440 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Initialize engine version: 5.4.0f3 (a6d8d714de6f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3050 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.042 seconds
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Allen\Desktop\3Dvs2D_vr-potions\test2_Data\Managed\System.dll (this message is harmless)
+desktop: 2560x1440 60Hz; virtual: 4480x1440 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.697949 ms
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+<RI> Initialized touch support.
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1ec4 -> priority: 1 
+  Thread -> id: 918 -> priority: 1 
+OnStatusChanged: Connect current State: ConnectingToNameServer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Connected to NameServer.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: EncryptionEstablished current State: ConnectingToNameServer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Received your UserID from server. Updating local value to: 8938ed81-8536-40ec-ad01-70eae0dc7079
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Disconnect current State: DisconnectingFromNameServer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Connect current State: ConnectingToMasterserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Connected to masterserver.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: EncryptionEstablished current State: Authenticating
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 226.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Launcher: OnConnectedToMaster() was called by PUN
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 229: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 230.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+UnloadTime: 0.657349 ms
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1660 -> priority: 1 
+  Thread -> id: 27a8 -> priority: 1 
+OnStatusChanged: Connect current State: ConnectingToNameServer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Connected to NameServer.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: EncryptionEstablished current State: ConnectingToNameServer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Received your UserID from server. Updating local value to: 2c0e7b00-90dd-4c2d-8bd6-49d58d9f98d6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Disconnect current State: DisconnectingFromNameServer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Connect current State: ConnectingToMasterserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Connected to masterserver.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: EncryptionEstablished current State: Authenticating
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 226.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Launcher: OnConnectedToMaster() was called by PUN
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 229: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 230.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+UnloadTime: 0.662723 ms
+0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 2248 -> priority: 1 
+  Thread -> id: 1658 -> priority: 1 
+OnStatusChanged: Connect current State: ConnectingToNameServer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Connected to NameServer.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: EncryptionEstablished current State: ConnectingToNameServer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Received your UserID from server. Updating local value to: 245f34d0-cd3e-4a2a-be59-17fd265cb0f6
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Disconnect current State: DisconnectingFromNameServer
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Connect current State: ConnectingToMasterserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Connected to masterserver.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: EncryptionEstablished current State: Authenticating
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 226.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Launcher: OnConnectedToMaster() was called by PUN
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 229: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 230.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: nvent 226.
+ 
+(Filena
+me
+: C:/buildsOavEveni:yaveeiln/arti
+fa
+ctily/name: C:commocts/gtnmeratey/buiineDetifacts/generatedncomine: 4nti
+
+gs.gen.cpp Line: gBin
+d
+ings.gen.cpp Line: 42)
+
+OperationResponse 229: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 230.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 227: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Disconnect current State: DisconnectingFromMasterserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Connect current State: ConnectingToGameserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Connected to gameserver.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: EncryptionEstablished current State: ConnectedToGameserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 227: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Room created.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 255.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Room joined
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The referenced script on this Behaviour (Game Object 'Gate') is missing!
+ 
+(Filename:  Line: 1656)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+PUN-instantiated 'Bottle_Health' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PUN-instantiated 'Bottle_Mana' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+UnloadTime: 5.936747 ms
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2995.
+Total: 1.449931 ms (FindLiveObjects: 0.182099 ms CreateObjectMapping: 0.057913 ms MarkObjects: 0.649886 ms  DeleteObjects: 0.559135 ms)
+
+We are Instantiating LocalPlayer from Level1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 1001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 252: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 252: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 229.
+ 
+(Filena
+me
+: C:/bame: uildslave/uve/nitty/yu/bd/uild/actrtifacts/generated/common/runtime/UineDebggBineiDgsebugBindings.ge42)
+
+ Line: 42)
+
+OperationResponse 229: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 230.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 226: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Disconnect current State: DisconnectingFromMasterserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Connect current State: ConnectingToGameserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Connected to gameserver.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: EncryptionEstablished current State: ConnectedToGameserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 255.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/gOneerationRespmose 226: ReturnCode:neDe
+bu
+(gBindings.g:/buildsine: 42)
+t
+y/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnPhotonPlayerConnected() 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnPhotonPlayerConnected isMasterClient True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The referenced script on this Behaviour (Game Object 'Gate') is missing!
+ 
+(Filename:  Line: 1656)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+PUN-instantiated 'Bottle_Health' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PUN-instantiated 'Bottle_Mana' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+UnloadTime: 5.997347 ms
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2998.
+Total: 1.478888 ms (FindLiveObjects: 0.180905 ms CreateObjectMapping: 0.059704 ms MarkObjects: 0.661529 ms  DeleteObjects: 0.575852 ms)
+
+We are Instantiating LocalPlayer from Level1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2003
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 255.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Room joined
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 1001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at FirstPersonController.RotateView () [0x00000] in <filename unknown>:0 
+  at FirstPersonController.movement () [0x00000] in <filename unknown>:0 
+  at PlayerController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2003
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 229.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 229: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 230.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 226.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 226: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Disconnect current State: DisconnectingFromMasterserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Connect current State: ConnectingToGameserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Connected to gameserver.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: EncryptionEstablished current State: ConnectedToGameserver
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 230: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OperationResponse 226: ReturnCode: 0.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/: Event 255.
+ru
+ntime/lniename: C:/buildndings.gen.cpp Line: 42)ts/generated/c
+ommon/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnPhotonPlayerConnected() 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 255.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnPhotonPlayerConnected() 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnPhotonPlayerConnected isMasterClient True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+The referenced script on this Behaviour (Game Object 'Gate') is missing!
+ 
+(Filename:  Line: 1656)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PUN-instantiated 'Bottle_Health' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PUN-instantiated 'Bottle_Mana' got destroyed by engine. This is OK when loading levels. Otherwise use: PhotonNetwork.Destroy().
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+UnloadTime: 6.378264 ms
+
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2998.
+Total: 1.583670 ms (FindLiveObjects: 0.245088 ms CreateObjectMapping: 0.060301 ms MarkObjects: 0.698247 ms  DeleteObjects: 0.579136 ms)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+We are Instantiating LocalPlayer from Level1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 3001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 3003
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at FirstPersonController.GetInput (System.Single& speed) [0x00000] in <filename unknown>:0 
+  at FirstPersonController.FixedUpdateChange () [0x00000] in <filename unknown>:0 
+  at PlayerController.FixedUpdate () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+OnEvent: Event 255.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Room joined
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 1001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2003
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 3001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 3003
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 3001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 3002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 3003
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 255.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 255.
+ 
+(Filename: CO/nEildslave/uOi 2hoto
+ 
+(FaerConrected() 
+i
+lenateame: mon/luldsavveunity//build/arguiiadd/ar.gefacpp /gen:n/runt
+i
+me/UnityEngine/UnityEndings.gen.cpp Line: 42)
+
+OnPhotonPlayene:n 42)d(
+) 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnPhotonPlayerConnected isMasterClient True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngiOeDnPhotonPlayerCon.cpp Line: 
+42
+)
+
+lename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpO nEvent: Ev
+e
+nt 201.
+ O
+nEvent: Event 206.
+ 
+(Filename: C:ld/artifacts/generated/common/runtimenerated/common/runtime/gs.genUnityLine: 42)ug
+Bindings.genvepp Line: 42)
+
+.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: O2nE
+v
+ent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 4001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 4002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 4003
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 4001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 4002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 4003
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 202.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 4001
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 4002
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 4003
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(FileOnEvent: Evildsl06.
+ 
+(Filename: Crtiuildss/genenity/build/artifacts/generated/common/Bindings.gen.cpp LeDebugBind
+i
+ngs.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/comOonEvent: Event 201.
+ 
+(Filename: C:/buildsl Le/unity/bu
+i
+ld/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event n01.
+ 
+(F
+il
+ename: Ce: Cuiluildsve/ununty/buuild/artifacts/genneratedcommon/runtime/UnitityEngineDegBindings.gen.cpp pp Line: 4
+2
+)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindiOgsnEvent: Event 201.
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generatedOcnEvoe/nt: Event 201.gin
+eDilename: C:/buildslave/une: 42)
+
+d/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebuOnEveitngsv.gt 201.
+ L
+ine:ename:
+
+ C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEOgineDeb:ugBindings.ge
+. pp
+ Lilee na)m
+
+e: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: CO/nuildslave/unity/b.
+ 
+(Filename: C:/brated/common/runtime/UnityEngineDebugBindings.ge/.cpp Line: 42)
+
+ineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebuOnEventngEvent 201.
+ 
+(Filena
+m
+e: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 20O.n
+Ev
+ent: Event 201bu
+il
+dsilename: C:/buildslave/unity/nerated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)ge
+n.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnOtnEvgine: EveBind01g.
+ n.cpp Lanee: C:2)il
+dslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindOnnE.egt:n.cpp Line: 
+42
+)
+i
+lename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpO nEvent: Ev
+e
+nt 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/cOmmonEventime/Unit E201.D bu
+(Filndiame.gen./bu ildsla42)
+u
+nity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generOtnd/venmo: Ev/nruntime
+/U
+nityEngineDebugBindings.gen.cpp Line: r2)
+
+acts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)E
+
+vent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindingsOgnE.vpp Line: nt 20
+1
+.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/rOntime/UnityEngineDebu
+ 
+(Filename: C:/buildslave/u
+n
+ity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ O
+(Filename: C:/buildsl
+av
+e/unity/build/artifacts/generatbuild/artifacts/generated/cneDebugBindings.gen.cpp Line: 42)
+
+ngs.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpO nivnne:: v4n2 )06
+.
+
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Failed to Instantiate prefab: gold_key 1 1. Verify the Prefab is in a Resources folder (and not in a subfolder)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Failed to Instantiate prefab: gold_key 1 1. Verify the Prefab is in a Resources folder (and not in a subfolder)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Failed to Instantiate prefab: gold_key 1 1. Verify the Prefab is in a Resources folder (and not in a subfolder)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Failed to Instantiate prefab: gold_key 1 1. Verify the Prefab is in a Resources folder (and not in a subfolder)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Disconnect current State: Disconnecting
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: 2D_Player(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Dungeoneer(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Spells
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Melee
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Dungeoneer(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Spells
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Melee
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Dungeoneer(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Spells
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Melee
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Launcher: OnDisconnectedFromPhoton() was called by PUN.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+UnloadTime: 2.794782 ms
+Registered PhotonView: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 254.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebuOBinninEv.gen.cpp Line: 42
+)
+
+Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+HandleEventLeave for player ID: 1 evLeave: Event 254: {(Byte)252=(Int32[])System.Int32[], (Byte)203=(Int32)2, (Byte)254=(IHtandleE
+ve
+nFtLeave for plaiel IDl: 1 envtLebavld/artint 254: {(Byte)252=(Int32un]imSyUnityEngtineD, ugByte)203=(gent32)2, (Byte)2)
+
+=(Int32)1}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: 2D_Player(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/comNoe/tworkme/UnityEngineDebateid iGOs: 2n_.cpp LiCnoe: 4
+2
+(
+
+Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnPhotonPlayerDisconnected() 
+ 
+(Filename: O:/bhuioldslavrDinsconbuciedd)/
+ar
+tifacts/generated/common/runty/build/artifacts/generated/common/runtime/Unit
+y
+EngiOnPhotonPlayerConnected isMasterCl
+i
+ent True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PhotonNetwork : Loading Level : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngiOeDenuEBvedntg: gEn.cpp 2in6e
+:
+(F2)
+ame: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generateO/comment: Evtent 2nit.
+ inFielenBamde:g C:/n.clpspaveiune: /42i)/
+rtifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityOngnEvent: Event 201.
+ 
+(Filename: C:/
+b
+uildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(FilenaOe:nEvent: Event 201.
+ 
+bFiuild/artifacts/genere/ued/ycboimdmaon/runtime/UnityEngineDebugBindings.gen.cpip LinugBindin
+
+s.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEOgineDebugEvndings.gen
+.c
+pp Line: 42)
+
+buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngninent: Event 201.
+ 
+(File Line:C:42)
+
+ldslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtOmenEvent: Event 201.
+ 
+(nFilename: C:/buildsla
+v
+e/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifOcnEvennerated/common/
+ru
+(Fiime/UnityEngineDebugBindings.genldpp Line: 42)
+
+erated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Disconnect current State: Disconnecting
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Dungeoneer(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Spells
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Melee
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Dungeoneer(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Spells
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Melee
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Dungeoneer(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Spells
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Melee
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Launcher: OnDisconnectedFromPhoton() was called by PUN.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+UnloadTime: 2.014440 ms
+Registered PhotonView: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 254.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+HandleEventLeave for player ID: 3 evLeave: Event 254: {(Byte)252=(Int32[])System.Int32[], (Byte)254=(Int32)3}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Dungeoneer(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Spells
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Melee
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnPhotonPlayerDisconnected() 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnPhotonPlayerConnected isMasterClient True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+PhotonNetwork : Loading Level : 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 206.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnEvent: Event 201.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+OnStatusChanged: Disconnect current State: Disconnecting
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Dungeoneer(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Spells
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Melee
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Dungeoneer(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Spells
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Network destroy Instantiated GO: Melee
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Launcher: OnDisconnectedFromPhoton() was called by PUN.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+UnloadTime: 3.454520 ms
+Registered PhotonView: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Registered PhotonView: 2
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
