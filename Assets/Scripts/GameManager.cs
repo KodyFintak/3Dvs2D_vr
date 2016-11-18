@@ -13,6 +13,8 @@ public class GameManager : Photon.PunBehaviour {
     public GameObject dMPrefab;
     [Tooltip("The prefab to use for representing the dungeoneers")]
     public GameObject dungeoneerPrefab;
+	[Tooltip("The prefab to use for when any player dies")]
+	public GameObject deathScreenPrefab;
 
     #endregion
 
@@ -72,11 +74,8 @@ public class GameManager : Photon.PunBehaviour {
                     CameraWork cameraScript = MainCamera.GetComponent<CameraWork>();
                     if (cameraScript != null)
                     {
-                        if(player.name == "2D_Player(Clone)")
-                        {
-                           MainCamera.transform.position = new Vector3(MainCamera.transform.position.x, MainCamera.transform.position.y - 0.2f, MainCamera.transform.position.z);
-                       }
-                       cameraScript.target = player;
+						MainCamera.transform.position = new Vector3(player.transform.position.x, player.transform.position.y , player.transform.position.z);
+                        cameraScript.target = player;
                     }
                 }
                 Playercount += 1;

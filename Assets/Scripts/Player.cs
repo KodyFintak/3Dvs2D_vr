@@ -20,6 +20,7 @@ public class Player : Photon.MonoBehaviour, IPunObservable
     private float fireSpellCooldown = 2f;
     public MeleeSystem melee;
 	public AudioSource audioSource;
+	public GameObject deathScreen;
 
 	private Camera playerCamera;
 
@@ -144,7 +145,11 @@ public class Player : Photon.MonoBehaviour, IPunObservable
 		
 	void death(){
 		PhotonView.Destroy (gameObject);
-		GameManager game = GameObject.Find ("GameManager").GetComponent<GameManager>();
-		game.LeaveRoom ();
+		GameObject deathTime = PhotonNetwork.Instantiate (deathScreen.name, new Vector3(this.transform.position.x, 15f, this.transform.position.z), Quaternion.Euler(90f,0f,0f), 0);
+		if (playerCamera != null && cameraScript != null && photonView.isMine)
+		{
+			//playerCamera.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+			cameraScript.target = deathTime;
+		}
 	}
 }

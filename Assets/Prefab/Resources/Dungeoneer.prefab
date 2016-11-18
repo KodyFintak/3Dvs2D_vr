@@ -431,7 +431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 4000010417527498}
-  spell: {fileID: 1000011210753154, guid: 787e507cca5fe924ea805b6f2aa06a42, type: 2}
   spellspeed: 1000
 --- !u!114 &114000010803544866
 MonoBehaviour:
@@ -515,6 +514,8 @@ MonoBehaviour:
   cameraScript: {fileID: 0}
   melee: {fileID: 114000011580795866}
   audioSource: {fileID: 0}
+  deathScreen: {fileID: 1000012981444456, guid: 25e29142262c04a55baf4b9f3116c6f9,
+    type: 2}
 --- !u!114 &114000011580795866
 MonoBehaviour:
   m_ObjectHideFlags: 1
