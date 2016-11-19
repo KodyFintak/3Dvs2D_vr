@@ -5,7 +5,7 @@ public class keyDestroy : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider){
 		if (collider.gameObject.tag == "Dungeoneer") {
-			PhotonNetwork.Destroy (gameObject);
+			PhotonView.Destroy (gameObject);
 		}
 	}
 }
