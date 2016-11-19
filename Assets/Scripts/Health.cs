@@ -7,13 +7,18 @@ public class Health : MonoBehaviour {
     int currentHitPoints;
 	Master_Control skeleControl;
 	Player playerScript;
+	Cyclops_MasterControls cyclopControl;
 
 	// Use this for initialization
 	void Start () {
 		if (this.name == "Dungeoneer(Clone)") {
 			playerScript = GetComponent<Player> ();	
-		} else {
+		} 
+		if(this.name == "Skeleton_FullPrefab(Clone)") {
 			skeleControl = GetComponent<Master_Control> ();
+		}
+		if (this.name == "Cyclops_FullPrefab(Clone)") {
+			cyclopControl = GetComponent<Cyclops_MasterControls> (); 
 		}
         currentHitPoints = hitPoints;
 	}
@@ -25,8 +30,12 @@ public class Health : MonoBehaviour {
 		if (playerScript != null) {
 			playerScript.setHealth (currentHitPoints);
 
-		} else {
+		} 
+		if (skeleControl != null){
 			skeleControl.setHealth (currentHitPoints);
+		}
+		if (cyclopControl != null) {
+			cyclopControl.setHealth (currentHitPoints);
 		}
     }
 }
