@@ -173,7 +173,7 @@ public class Player : Photon.MonoBehaviour, IPunObservable
 		
 	void death(){
 		// ------------------------------------Allen Ng--------------------
-		if (keyCount > 0) {
+		while (keyCount > 0) {
 			PhotonNetwork.Instantiate ("key_gold 1 1", transform.position, Quaternion.identity, 0);
 			keyCount--;
 		}
