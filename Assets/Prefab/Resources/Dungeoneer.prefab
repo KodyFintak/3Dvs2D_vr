@@ -514,6 +514,8 @@ MonoBehaviour:
   cameraScript: {fileID: 0}
   melee: {fileID: 114000011580795866}
   audioSource: {fileID: 0}
+  deathScreen: {fileID: 1000012981444456, guid: 08053c4e2e7523749b0436461380d6a7,
+    type: 2}
 --- !u!114 &114000011580795866
 MonoBehaviour:
   m_ObjectHideFlags: 1

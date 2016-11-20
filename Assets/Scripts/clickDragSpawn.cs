@@ -7,7 +7,8 @@ using System.Collections.Generic;
 public class clickDragSpawn : Photon.MonoBehaviour {
 
 	public GameObject enemy1;
-	public Transform[] spawnPoints;
+    public GameObject enemy2;
+    public Transform[] spawnPoints;
     public RaycastHit hit;
     public Ray ray;
     public Vector3 distance;
@@ -34,6 +35,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
         pathCounter = 0;
         keyCounter = 0;
         enemy1 = Resources.Load("Skeleton_FullPrefab") as GameObject;
+        enemy2 = Resources.Load("Cyclops_FullPrefab") as GameObject;
         camera = Camera.main;
 	}
 	void Update() {
@@ -78,7 +80,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
 
             if (e.type == EventType.MouseDown && rect1.Contains(e.mousePosition))
             {
-                PhotonNetwork.Instantiate(enemy1.name, spawnPoints[0].position, spawnPoints[0].rotation, 0);
+                StartCoroutine(spawnCy());
             }
 
             if (e.type == EventType.MouseDown && rect2.Contains(e.mousePosition))
@@ -99,8 +101,8 @@ public class clickDragSpawn : Photon.MonoBehaviour {
             {
                 StartCoroutine(spawnKey());
             }
-            GUI.Button(rect, "Spawn");
-            GUI.Button(rect1, "Spot 1");
+            GUI.Button(rect, "Skeleton");
+            GUI.Button(rect1, "Cyclops");
             GUI.Button(rect2, "Spot 2");
             GUI.Button(rect3, "Spot 3");
             GUI.Button(rect4, "Spot 4");
@@ -160,6 +162,10 @@ public class clickDragSpawn : Photon.MonoBehaviour {
         
         pathCounter++;
     }
+    void coolDown2()
+    {
+        rect1.position = new Vector2(0, 50);
+    }
 
     void coolDown()
     {
@@ -181,6 +187,23 @@ public class clickDragSpawn : Photon.MonoBehaviour {
                 PhotonNetwork.Instantiate(key.name, distance, Quaternion.identity,0);
                 keyCounter++;
             }
+        }
+    }
+    IEnumerator spawnCy()
+    {
+        do
+        {
+            yield return null;
+        }
+        while (!Input.GetMouseButtonUp(0));
+        ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
+        {
+            distance = hit.point;
+            distance.y = 1;
+            PhotonNetwork.Instantiate(enemy2.name, distance, Quaternion.identity, 0);
+            rect.position = new Vector2(-200, 0);
+            Invoke("coolDown2", 3.0f);
         }
     }
 }

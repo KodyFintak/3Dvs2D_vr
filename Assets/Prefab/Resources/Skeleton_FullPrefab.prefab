@@ -1255,6 +1255,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2f4b6fa43af4ac8a8d51a848894bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manaPotions: {fileID: 1000012272618622, guid: 87383c90a505b4951ac89e4316fbe6a7,
+    type: 2}
+  healthPotions: {fileID: 1000014089449766, guid: c44eef6af74d1495bb4242b9c11856dd,
+    type: 2}
 --- !u!114 &114000010481804982
 MonoBehaviour:
   m_ObjectHideFlags: 1

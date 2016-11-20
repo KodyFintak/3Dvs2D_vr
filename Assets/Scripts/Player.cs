@@ -20,6 +20,14 @@ public class Player : Photon.MonoBehaviour, IPunObservable
     private float fireSpellCooldown = 2f;
     public MeleeSystem melee;
 	public AudioSource audioSource;
+	public GameObject deathScreen;
+
+	// ALLEN NG ADDED THESE TWO VARIABLES____________________________
+	private int maxHealth = 7;
+	private int maxMana = 8;
+	// ALLEN NG LALALALALLALALALAL___________________________________________________
+
+
 
 	private Camera playerCamera;
 
@@ -64,15 +72,15 @@ public class Player : Photon.MonoBehaviour, IPunObservable
 
     }
 
-    public void AIMelee(int damage)
-    {
-        health = health - damage;
-    }
-
-    public void addExp(int expPoint)
-    {
-        xp = xp + expPoint;
-    }
+//    public void AIMelee(int damage)
+//    {
+//        health = health - damage;
+//    }
+//
+//    public void addExp(int expPoint)
+//    {
+//        xp = xp + expPoint;
+//    }
 
 	public void setHealth(int newHealth){
 		health = newHealth;
@@ -91,14 +99,16 @@ public class Player : Photon.MonoBehaviour, IPunObservable
             return;
         }
 
-
-        // rule out any trigger not tagged "Beam". We are only interested in Beamers
-        if (!other.CompareTag("Beam"))
-        {
-            return;
-        }
-
-        health -= 1;
+		// -----------------------------------------ALLEN NG ADDED THESE _______________----------------________
+		// Change the number in healthPotion or manaPotion to change the amount healed or gained per potion. 
+		if (other.CompareTag ("Health")){
+			healthPotion (4);
+		}else if(other.CompareTag("Mana")){
+			manaPotion (1);
+		}
+		// Don't know if this is okay, but it works for now :D
+		//Gives Error that Tag is not Beam but the game still works.
+		// _____________----------------------------- ALLEN NG ^^^^^^^__________________________________________
     }
     void ProcessInputs()
     {
@@ -144,7 +154,32 @@ public class Player : Photon.MonoBehaviour, IPunObservable
 		
 	void death(){
 		PhotonView.Destroy (gameObject);
-		GameManager game = GameObject.Find ("GameManager").GetComponent<GameManager>();
-		game.LeaveRoom ();
+		GameObject deathTime = PhotonNetwork.Instantiate (deathScreen.name, new Vector3(this.transform.position.x, 15f, this.transform.position.z), Quaternion.Euler(90f,0f,0f), 0);
+		if (playerCamera != null && cameraScript != null && photonView.isMine)
+		{
+			//playerCamera.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+			cameraScript.target = deathTime;
+		}
 	}
+	// --------------------------- ALLEN NG CODE -------------------------- 
+
+	public void healthPotion(int change){
+		Debug.Log ("Health Potion Function Called");
+		Health h = GetComponent<Health>();
+		health = health + change;
+		if(health > maxHealth){
+			health = maxHealth;
+		}
+		h.setHealth (health);
+
+	}
+
+	public void manaPotion (int change){
+		Debug.Log ("Mana Potion Function Called");
+		mana = mana + change;
+		if(mana > maxMana){
+			mana = maxMana;
+		}
+	}
+	// --------------------------------------------------------------------
 }

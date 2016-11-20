@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Master_Control : MonoBehaviour {
+public class Master_Control : Photon.MonoBehaviour {
 
     private LayerMask detectionLayer;
     Collider[] hitColliders;
@@ -27,6 +27,15 @@ public class Master_Control : MonoBehaviour {
 	int health = 3;
 	Combat combatScript;
 	Player playerScript;
+	bool spawnOne = true;
+
+	// I ADDED THESE TWO LINESSSSSS ********************************************
+	//
+	//
+	//public GameObject manaPotions;
+	//public GameObject healthPotions;
+	//
+	// *********************************************************************** ALLEN NG
 
 	// Use this for initialization
 	void Start () {
@@ -90,12 +99,6 @@ public class Master_Control : MonoBehaviour {
 	void OnCollisionEnter(Collision col){
 		health = health - 2;
 	}
-	
-
-//	IEnumerator SleepForDam(){
-//		yield return new WaitForSecondsRealtime(0.5f);
-//		skeleControl.setRun (animate);
-//	}
 
 	IEnumerator SleepForIdle(float timeToWait){
 		agent.enabled = false;
@@ -111,7 +114,20 @@ public class Master_Control : MonoBehaviour {
 		// get rid of box collider soon please
 		yield return new WaitForSecondsRealtime(4f);
 		agent.enabled = false;
-		PhotonNetwork.Destroy (gameObject);
+
+
+
+		// ****************** ALLEN NG ADDED THESE LINESSSSSSSSSSS******************************** CHANGE 50 TO LOWER NUMBER TO INCREASE SPAWN RATE OF POTIONS 
+		if (spawnOne && photonView.isMine) {
+			spawnOne = false;
+			if (5 == Random.Range (4, 6)) {
+				PhotonNetwork.Instantiate ("manapot", transform.position, Quaternion.identity, 0);
+			} else if (10 == 10) {
+				PhotonNetwork.Instantiate ("healthpot", transform.position, Quaternion.identity, 0);
+			}
+			// ***************************************************************************************
+			PhotonNetwork.Destroy (gameObject);
+		}
 	}
 
     void SetInitialReferences()
@@ -127,9 +143,6 @@ public class Master_Control : MonoBehaviour {
 		pathScript = GameObject.Find("2D_Player(Clone)").GetComponent<clickDragSpawn>();
         agent = GetComponent<NavMeshAgent>();
         skeleControl = GetComponent<Skel_Control>();
-        //playerLocation = GameObject.Find ("FirstPersonCharacter").transform;
-        //playerLocation = GameObject.Find("2D_Player(Clone)").transform;
-        //playerScript = GameObject.Find ("Player").GetComponent<Player>();
         playerScript = null;
         combatScript = GetComponent<Combat>();
     }
