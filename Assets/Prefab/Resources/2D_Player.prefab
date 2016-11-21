@@ -27,6 +27,7 @@ GameObject:
   - 114: {fileID: 114000010078646946}
   - 114: {fileID: 114000010863499916}
   - 114: {fileID: 114000010463856286}
+  - 114: {fileID: 114000013277192906}
   m_Layer: 0
   m_Name: 2D_Player
   m_TagString: MainCamera
@@ -107,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy1: {fileID: 1000013412457412, guid: 1bf4ce829ac734407909a860fd4e60ab, type: 2}
+  enemy2: {fileID: 0}
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -168,6 +170,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &114000013277192906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012185057668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a37c1e2fc8330d748b012385f762d2f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathScreen: {fileID: 1000012981444456, guid: 08053c4e2e7523749b0436461380d6a7,
+    type: 2}
 --- !u!124 &124000011707113226
 Behaviour:
   m_ObjectHideFlags: 1

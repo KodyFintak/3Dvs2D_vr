@@ -8,6 +8,7 @@ public class Health : MonoBehaviour {
 	Master_Control skeleControl;
 	Player playerScript;
 	Cyclops_MasterControls cyclopControl;
+    int maxHealth;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,7 @@ public class Health : MonoBehaviour {
 			skeleControl = GetComponent<Master_Control> ();
 		}
         currentHitPoints = hitPoints;
+        maxHealth = hitPoints;
 	}
 		
 	public void setHealth(int health){
@@ -31,6 +33,10 @@ public class Health : MonoBehaviour {
     void TakeDamage(int amt)
     {
         currentHitPoints -= amt;
+        if(currentHitPoints > maxHealth)
+        {
+            currentHitPoints = maxHealth;
+        }
 		if (playerScript != null) {
 			playerScript.setHealth (currentHitPoints);
 		} 

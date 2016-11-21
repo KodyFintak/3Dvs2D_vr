@@ -2,13 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Cyclops_MasterControls : MonoBehaviour {
+public class Cyclops_MasterControls : Photon.MonoBehaviour {
 
 	private LayerMask detectionLayer;
 	Collider[] hitColliders;
 	private float checkRate;
 	private float nextCheck;
 	private float detectionRadius = 300;
+    bool spawnOne = true;
 
 
 	Transform myTransform;
@@ -73,7 +74,23 @@ public class Cyclops_MasterControls : MonoBehaviour {
 		yield return new WaitForSecondsRealtime(3f);
 		agent.enabled = false;
 		PhotonNetwork.Destroy (gameObject);
-	}
+
+        if (spawnOne && photonView.isMine)
+        {
+            spawnOne = false;
+            if (10 == 10)
+            {
+                PhotonNetwork.Instantiate("manapot", transform.position, Quaternion.identity, 0);
+            }
+            else if (5 == Random.Range(0, 11))
+            {
+                PhotonNetwork.Instantiate("healthpot", transform.position, Quaternion.identity, 0);
+            }
+            // ***************************************************************************************
+            PhotonNetwork.Destroy(gameObject);
+        }
+
+    }
 
 	void SetInitialReferences()
 	{

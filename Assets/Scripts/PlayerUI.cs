@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerUI : MonoBehaviour {
 
 	[Tooltip("Pixel offset from the player target")]
-	public Vector3 ScreenOffset = new Vector3 (0f, 30f, 0f);
+	public Vector3 ScreenOffset = new Vector3 (0f, 3f, 0f);
 
 	public Text PlayerNameText;
 	public Slider PlayerHealthSlider;
+    public Slider PlayerManaSlider;
+    public Slider PlayerKeySlider;
 
 
-	Player _target;
+    Player _target;
 	float _characterControllerHeight = 0f;
 	Transform _targetTransform;
 	Vector3 _targetPosition;
@@ -28,7 +31,16 @@ public class PlayerUI : MonoBehaviour {
 			_characterControllerHeight = _characterController.height;
 		}
 		if (PlayerNameText != null) {
-			PlayerNameText.text = _target.photonView.owner.name;
+            //PlayerNameText.text = _target.photonView.owner.name;
+            List<string> names = new List<string>();
+            names.Add("Capt. America");
+            names.Add("Sgt. Harambae");
+            names.Add("Lt. West Nile");
+            names.Add("Trump Wins");
+            string[] names2 = names.ToArray();
+            string name = names2[UnityEngine.Random.Range(0, names2.Length)];
+
+            PlayerNameText.text = name;
 		}
 	}
 
@@ -44,15 +56,24 @@ public class PlayerUI : MonoBehaviour {
 	void Update()
 	{
 		if (PlayerHealthSlider != null) {
-			PlayerHealthSlider.value = _target.getHealth();
-		}
-		if (_target == null) {
+			//PlayerHealthSlider.value = _target.getHealth();
+        }
+        if (PlayerManaSlider != null)
+        {
+           // PlayerManaSlider.value = _target.getMana();
+        }
+        if (PlayerManaSlider != null)
+        {
+           // PlayerXPSlider.value = _target.getXP();
+        }
+        if (_target == null) {
 			Destroy (this.gameObject);
 			return;
 		}
 	}
 	void Awake()
 	{
-		this.GetComponent<Transform> ().SetParent (GameObject.Find ("Canvas").GetComponent<Transform> ());
+        if(!PhotonNetwork.isMasterClient)
+		    this.GetComponent<Transform> ().SetParent (GameObject.Find ("Canvas").GetComponent<Transform> ());
 	}
 }

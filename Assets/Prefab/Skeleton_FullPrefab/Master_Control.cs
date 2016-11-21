@@ -120,9 +120,9 @@ public class Master_Control : Photon.MonoBehaviour {
 		// ****************** ALLEN NG ADDED THESE LINESSSSSSSSSSS******************************** CHANGE 50 TO LOWER NUMBER TO INCREASE SPAWN RATE OF POTIONS 
 		if (spawnOne && photonView.isMine) {
 			spawnOne = false;
-			if (5 == Random.Range (4, 6)) {
+			if (10 == Random.Range (0, 31)) {
 				PhotonNetwork.Instantiate ("manapot", transform.position, Quaternion.identity, 0);
-			} else if (10 == 10) {
+			} else if ( 5 == Random.Range(0,31)) {
 				PhotonNetwork.Instantiate ("healthpot", transform.position, Quaternion.identity, 0);
 			}
 			// ***************************************************************************************

@@ -121,7 +121,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
         if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
         {
             distance = hit.point;
-            distance.y = 1;
+            distance.y = distance.y + 1;
             Debug.Log(tempNode.name);
             (Instantiate(tempNode, distance, Quaternion.identity) as GameObject).transform.parent = path[pathCounter].transform;
 			//GameObject.Find ("line" + pathCounter).transform.Translate (path[pathCounter].transform.GetChild(0).position);
@@ -144,7 +144,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
                 if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
                 {
                     distance = hit.point;
-                    distance.y = 1;
+                    distance.y = distance.y + 1;
                     (Instantiate(tempNode, distance, Quaternion.identity)as GameObject).transform.parent = path[pathCounter].transform;
 					counter = counter + 1;
 					GameObject.Find ("line"+pathCounter).GetComponent<LineRenderer> ().SetPosition (counter, path[pathCounter].transform.GetChild(counter).position);
@@ -183,7 +183,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
             if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
             {
                 distance = hit.point;
-                distance.y = 1;
+                distance.y = distance.y + 1;
                 PhotonNetwork.Instantiate(key.name, distance, Quaternion.identity,0);
                 keyCounter++;
             }
@@ -200,9 +200,9 @@ public class clickDragSpawn : Photon.MonoBehaviour {
         if (Physics.Raycast(ray, out hit) && hit.transform.name == "Terrain")
         {
             distance = hit.point;
-            distance.y = 1;
+            distance.y = distance.y +1;
             PhotonNetwork.Instantiate(enemy2.name, distance, Quaternion.identity, 0);
-            rect.position = new Vector2(-200, 0);
+            rect1.position = new Vector2(-200, 0);
             Invoke("coolDown2", 3.0f);
         }
     }
