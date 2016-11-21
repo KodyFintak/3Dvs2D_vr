@@ -1,0 +1,13 @@
+date: November 16, 2016
+meeting_type: ta
+attendance: [allenng, bennysiu, kodyfint, mjluck]
+absent: [] 
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Working on Potions and Keys}
+  {ubit: kodyfint, progress: Working on Death Screens and New AI}
+  {ubit: bennysiu, progress: Working on fixing up code}
+  {ubit: mjluck, progress: Working on fixing up code}
+  ]
+issues: []
+Notes: 

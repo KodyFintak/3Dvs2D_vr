@@ -1,0 +1,13 @@
+date: November 9, 2016
+meeting_type: ta
+attendance: [allenng, bennysiu, kodyfint, mjluck]
+absent: [] 
+excused_abscences: []
+task_progress: [
+  {ubit: allenng, progress: Working on Potions}
+  {ubit: kodyfint, progress: Working on VR implementation}
+  {ubit: bennysiu, progress: Working on VR implementation}
+  {ubit: mjluck, progress: Working on updating the Menus and Player HUD}
+  ]
+issues: []
+Notes: 

@@ -1,0 +1,12 @@
+date: November 11, 2016
+meeting_type: group
+attendance: [allenng, bennysiu, kodyfint]
+absent: [mjluck] 
+excused_abscences: [{ubit: mjluck, reason: Important meeting}]
+task_progress: [
+  {ubit: allenng, progress: Working on Keys and Potions}
+  {ubit: kodyfint, progress: Working on VR Implementation}
+  {ubit: bennysiu, progress: Working on VR Implementation}
+  ]
+issues: []
+Notes: 
