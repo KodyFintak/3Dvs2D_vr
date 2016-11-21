@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Dungeoneer
   - Enemy
+  - Magic
+  - Melee
+  - Health
+  - Mana
+  - Key
   layers:
   - Default
   - TransparentFX

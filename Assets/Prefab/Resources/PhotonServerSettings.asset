@@ -19,7 +19,7 @@ MonoBehaviour:
   VoiceAppID: 
   PreferredRegion: 1
   EnabledRegions: -1
-  JoinLobby: 1
+  JoinLobby: 0
   EnableLobbyStatistics: 0
   RpcList:
   - 43686174
@@ -45,4 +45,5 @@ MonoBehaviour:
   - Marco
   - Polo
   - TakeDamage
+  - die2D
   DisableAutoOpenWizard: 1

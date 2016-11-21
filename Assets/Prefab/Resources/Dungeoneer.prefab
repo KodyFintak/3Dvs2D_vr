@@ -286,7 +286,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012387114720}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!82 &82000011515300300
 AudioSource:
   m_ObjectHideFlags: 1
@@ -431,7 +431,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 4000010417527498}
-  spell: {fileID: 1000011210753154, guid: 787e507cca5fe924ea805b6f2aa06a42, type: 2}
   spellspeed: 1000
 --- !u!114 &114000010803544866
 MonoBehaviour:
@@ -445,6 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 25
+  currentHitPoints: 0
 --- !u!114 &114000011010397538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -507,14 +507,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e06dd42738a43e4591dba2932324554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  mana: 8
-  xp: 40
+  health:
+    bar: {fileID: 0}
+    maxVal: 25
+    currentVal: 25
+  mana:
+    bar: {fileID: 0}
+    maxVal: 8
+    currentVal: 8
+  key:
+    bar: {fileID: 0}
+    maxVal: 4
+    currentVal: 0
   spell: {fileID: 114000010373369582}
   hurt: {fileID: 8300000, guid: f37407e8fbb264517b4b0a79d9f3762c, type: 3}
   cameraScript: {fileID: 0}
   melee: {fileID: 114000011580795866}
   audioSource: {fileID: 0}
+  deathScreen: {fileID: 1000012981444456, guid: 08053c4e2e7523749b0436461380d6a7,
+    type: 2}
+  keyCount: 0
+  maxKey: 4
 --- !u!114 &114000011580795866
 MonoBehaviour:
   m_ObjectHideFlags: 1

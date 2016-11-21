@@ -24,8 +24,8 @@ public class Combat : MonoBehaviour {
 					{
 						Health h = hit.transform.GetComponent<Health>();
 
-						if(h != null)
-						{
+                        if (h != null && PhotonNetwork.isMasterClient)
+                        {
 							h.GetComponent<PhotonView>().RPC("TakeDamage", PhotonTargets.All, 1);
 							//hit.collider.SendMessage("MeleeDamage", Damage, SendMessageOptions.DontRequireReceiver);
 						}

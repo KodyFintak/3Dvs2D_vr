@@ -13,7 +13,7 @@ public class GameManager : Photon.PunBehaviour {
     public GameObject dMPrefab;
     [Tooltip("The prefab to use for representing the dungeoneers")]
     public GameObject dungeoneerPrefab;
-
+    public GameObject ui;
     #endregion
 
     #region Private Variables
@@ -64,7 +64,7 @@ public class GameManager : Photon.PunBehaviour {
                     SpawnSpot mySpawnSpot = spawnSpots[UnityEngine.Random.Range(0, spawnSpots.Length)];
                     // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
                     player = PhotonNetwork.Instantiate(this.dungeoneerPrefab.name, mySpawnSpot.transform.position, mySpawnSpot.transform.rotation, 0);
-                    GUI.enabled = false;
+                    //GUI.enabled = false;
                 }
                 GameObject MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
                 if (MainCamera != null)
@@ -72,11 +72,12 @@ public class GameManager : Photon.PunBehaviour {
                     CameraWork cameraScript = MainCamera.GetComponent<CameraWork>();
                     if (cameraScript != null)
                     {
-                        if(player.name == "2D_Player(Clone)")
+                        if (player.name == "2D_Player(Clone)")
                         {
                            MainCamera.transform.position = new Vector3(MainCamera.transform.position.x, MainCamera.transform.position.y - 0.2f, MainCamera.transform.position.z);
                        }
                        cameraScript.target = player;
+                        ui.SetActive(true);
                     }
                 }
                 Playercount += 1;
@@ -97,7 +98,7 @@ public class GameManager : Photon.PunBehaviour {
         else
         {
             Debug.Log("PhotonNetwork : Loading Level : 1");
-            PhotonNetwork.LoadLevel("Level1");
+            //PhotonNetwork.LoadLevel("Level1");
         }
     }
     #endregion
