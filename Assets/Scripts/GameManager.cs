@@ -61,8 +61,10 @@ public class GameManager : Photon.PunBehaviour {
                         Debug.LogError("Nope.");
                         return;
                     }
-                    SpawnSpot mySpawnSpot = spawnSpots[UnityEngine.Random.Range(0, spawnSpots.Length)];
+                    //SpawnSpot mySpawnSpot = spawnSpots[UnityEngine.Random.Range(0, spawnSpots.Length)];
                     // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
+                    SpawnSpot mySpawnSpot = spawnSpots[PhotonNetwork.countOfPlayers];
+                
                     player = PhotonNetwork.Instantiate(this.dungeoneerPrefab.name, mySpawnSpot.transform.position, mySpawnSpot.transform.rotation, 0);
                     //GUI.enabled = false;
                 }
