@@ -513,8 +513,8 @@ MonoBehaviour:
     currentVal: 25
   mana:
     bar: {fileID: 0}
-    maxVal: 8
-    currentVal: 8
+    maxVal: 20
+    currentVal: 20
   key:
     bar: {fileID: 0}
     maxVal: 4

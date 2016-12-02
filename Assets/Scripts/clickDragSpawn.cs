@@ -24,9 +24,9 @@ public class clickDragSpawn : Photon.MonoBehaviour {
     Transform spawn;
 	Rect rect = new Rect(0, 0, 125, 50);
 	Rect rect1 = new Rect(0, 50, 125, 50);
-	Rect rect2 = new Rect(0, 100, 125, 50);
-	Rect rect3 = new Rect(0, 150, 125, 50);
-	Rect rect4 = new Rect(0, 200, 125, 50);
+	//Rect rect2 = new Rect(0, 100, 125, 50);
+	//Rect rect3 = new Rect(0, 150, 125, 50);
+	//Rect rect4 = new Rect(0, 200, 125, 50);
     Rect rect5 = new Rect(0, 250, 125, 50);
     Camera camera;
 
@@ -83,29 +83,29 @@ public class clickDragSpawn : Photon.MonoBehaviour {
                 StartCoroutine(spawnCy());
             }
 
-            if (e.type == EventType.MouseDown && rect2.Contains(e.mousePosition))
-            {
-                PhotonNetwork.Instantiate(enemy1.name, spawnPoints[1].position, spawnPoints[1].rotation, 0);
-            }
+            //if (e.type == EventType.MouseDown && rect2.Contains(e.mousePosition))
+            //{
+            //    PhotonNetwork.Instantiate(enemy1.name, spawnPoints[1].position, spawnPoints[1].rotation, 0);
+            //}
 
-            if (e.type == EventType.MouseDown && rect3.Contains(e.mousePosition))
-            {
-                PhotonNetwork.Instantiate(enemy1.name, spawnPoints[2].position, spawnPoints[2].rotation, 0);
-            }
+            //if (e.type == EventType.MouseDown && rect3.Contains(e.mousePosition))
+            //{
+            //    PhotonNetwork.Instantiate(enemy1.name, spawnPoints[2].position, spawnPoints[2].rotation, 0);
+            //}
 
-            if (e.type == EventType.MouseDown && rect4.Contains(e.mousePosition))
-            {
-                PhotonNetwork.Instantiate(enemy1.name, spawnPoints[3].position, spawnPoints[3].rotation, 0);
-            }
+            //if (e.type == EventType.MouseDown && rect4.Contains(e.mousePosition))
+            //{
+            //    PhotonNetwork.Instantiate(enemy1.name, spawnPoints[3].position, spawnPoints[3].rotation, 0);
+            //}
             if (e.type == EventType.MouseDown && rect5.Contains(e.mousePosition))
             {
                 StartCoroutine(spawnKey());
             }
             GUI.Button(rect, "Skeleton");
             GUI.Button(rect1, "Cyclops");
-            GUI.Button(rect2, "Spot 2");
-            GUI.Button(rect3, "Spot 3");
-            GUI.Button(rect4, "Spot 4");
+            //GUI.Button(rect2, "Spot 2");
+            //GUI.Button(rect3, "Spot 3");
+            //GUI.Button(rect4, "Spot 4");
             GUI.Button(rect5, (4 - keyCounter) + " Keys Remaining");
         }
 	}

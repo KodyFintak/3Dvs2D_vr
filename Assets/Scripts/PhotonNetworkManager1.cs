@@ -41,7 +41,7 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
 
     List<GameObject> roomPrefabs = new List<GameObject>();
     //GameObject player;
-    string _gameVersion = "0.2.0";
+    string _gameVersion = "0.4.0";
     string level_to_load = "Level1";
 
     #endregion
@@ -194,7 +194,7 @@ public class PhotonNetworkManager1 : Photon.PunBehaviour
                 if (PhotonNetwork.JoinLobby())
                 {
                     RoomOptions RO = new RoomOptions();
-                    RO.MaxPlayers = 4;
+                    RO.MaxPlayers = 20;
                     PhotonNetwork.CreateRoom(room_name.text, RO, TypedLobby.Default);
                 }
                 break;
