@@ -20,6 +20,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
     public GameObject tempNode;
     public int pathCounter;
     public int keyCounter;
+    public bool once = true;
 
     Transform spawn;
 	Rect rect = new Rect(0, 0, 125, 50);
@@ -41,6 +42,15 @@ public class clickDragSpawn : Photon.MonoBehaviour {
 	void Update() {
         if (photonView.isMine)
         {
+
+            if (once)
+            {
+                once = false;
+                rect.position = new Vector2(-200, 0);
+                rect1.position = new Vector2(-200, 0);
+            }
+        
+
             if (Input.GetMouseButton(0) && spawn != null)
             {
                 var pos = Input.mousePosition;
@@ -54,6 +64,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
                 spawn = null;
             }
         }
+        
     }
 
 	void OnGUI() {
@@ -171,7 +182,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
     {
         rect.position = new Vector2(0, 0);
     }
-
+     
     IEnumerator spawnKey()
     {
         do
@@ -186,6 +197,10 @@ public class clickDragSpawn : Photon.MonoBehaviour {
                 distance.y = distance.y + 1;
                 PhotonNetwork.Instantiate(key.name, distance, Quaternion.identity,0);
                 keyCounter++;
+                if (keyCounter == 4) {
+                    Invoke("coolDown", 1.0f);
+                    Invoke("coolDown2", 1.0f);
+                }
             }
         }
     }
@@ -203,7 +218,7 @@ public class clickDragSpawn : Photon.MonoBehaviour {
             distance.y = distance.y +1;
             PhotonNetwork.Instantiate(enemy2.name, distance, Quaternion.identity, 0);
             rect1.position = new Vector2(-200, 0);
-            Invoke("coolDown2", 3.0f);
+            Invoke("coolDown2", 10.0f);
         }
     }
 }
