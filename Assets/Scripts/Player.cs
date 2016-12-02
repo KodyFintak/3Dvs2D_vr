@@ -32,7 +32,7 @@ public class Player : Photon.MonoBehaviour, IPunObservable
     public int keyCount;
     public int maxKey = 4;
     //public GameObject keyObj;
-    private int maxMana = 8;
+    private int maxMana = 20;
 	// ALLEN NG LALALALALLALALALAL___________________________________
 
 
@@ -190,10 +190,19 @@ public class Player : Photon.MonoBehaviour, IPunObservable
 
         PhotonNetwork.Destroy(gameObject);
         // ------------------------------------Allen Ng--------------------
+        int i = 0;
         while (keyCount > 0)
         {
-            PhotonNetwork.Instantiate("key_gold 1 1", transform.position, Quaternion.identity, 0);
+            if (i > 0)
+            {
+                PhotonNetwork.Instantiate("key_gold 1 1", new Vector3(transform.position.x + (5*i),transform.position.y,transform.position.z), Quaternion.identity, 0);
+            }
+            else
+            {
+                PhotonNetwork.Instantiate("key_gold 1 1", transform.position, Quaternion.identity, 0);
+            }
             keyCount--;
+            i++;
         }
         // ---------------------------------------------------- ALLEN NG---
 
